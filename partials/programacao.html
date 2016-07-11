@@ -1,0 +1,38 @@
+u<section class="programacao row" ng-controller="calendarioCtrl">
+
+	<div class="container">
+        <h2>Programação</h2>
+
+        <div class="btn-group btn-group-justified" role="group">
+            <div class="btn-group">
+                <button class="btn btn-default">Por Dia</button>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-secondary">Por Tema</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <table class="table table-striped table-hover">
+            <thead>
+            <tr>
+                <th colspan="2">Horário</th>
+                <th>Palestrante</th>
+                <th>Palestra</th>
+                <th>Local</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="palestra in palestras">
+                <td>{{palestra.horario.inicio}}</td>
+                <td>{{palestra.horario.fim}}</td>
+                <td>{{palestra.palestrante}}</td>
+                <td>{{palestra.titulo}}</td>
+                <td>{{paletra.local}}</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="btn btn-default">Adicionar ao Google Calendar</div>
+    </div>
+</section>

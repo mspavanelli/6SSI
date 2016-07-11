@@ -1,0 +1,94 @@
+header {
+	background-image: url(../img/ssi_header_center.png);
+	height: 100vh;
+    min-height: 220px;
+	background-position: center;
+	padding: 0;
+	margin: 0;
+	background-size: cover;
+}
+
+section h2, section h3 {
+	text-align: center;
+	color: #391954;
+}
+
+.temas {
+	display: flex;
+	justify-content: space-around;
+}
+.temas img {
+	width: 70%;
+	height: 70%;
+}
+
+.contato {
+	margin-bottom: 100px;
+}
+
+.info small {
+	color: #1D355A;
+}
+
+table, table th {
+	text-align: center;
+}
+
+.banner {
+	margin-top: 51px;
+	background-color: #5e2b8a;
+}
+
+.banner img {
+	min-height: 40vh;
+	min-width: 375px;
+}
+
+.panel-primary > .panel-heading {
+	background-color: #511d7d;
+	border-color: #511d7d;
+}
+
+.panel-success > .panel-heading {
+	background-color: #AAB2BD;
+	border-color: #AAB2BD;
+}
+
+.panel-warning > .panel-heading {
+	background-color: #434A54;
+	border-color: #434A54;
+}
+
+.mapa {
+	display: flex;
+	justify-content: center;
+}
+
+.marcas {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+  	-webkit-flex-flow: row wrap;
+  	justify-content: space-around;
+}
+
+section.parceria .marca {
+	/*margin: auto 5px;*/
+}
+
+section.parceria img {
+	max-height: 200px;
+	max-width: 300px;
+	margin-bottom: 30px;
+}
+
+.marcas marca:last-child {
+	margin-bottom: 0px;
+}
+
+footer.footer {
+	margin-top: 100px;
+}

@@ -6,20 +6,53 @@ var ghPagesDeploy = require('gulp-gh-pages');
 gulp.task('server', function() {
 	browserSync.init({
 		server: {
-			baseDir: 'src'
+			baseDir: './'
 		}
 	});
-	gulp.watch('src/**/*.html').on('change', browserSync.reload);
+	gulp.watch('index.html').on('change', browserSync.reload);
 });
 
 gulp.task('buildImages', function() {
-	gulp.src('src/img/*')
+	gulp.src('img/*')
 	.pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('makeDist', function() {
-	
-	return gulp.src('page.html')
+gulp.task('clean', function() {
+	return gulp.src('dist')
+		.pipe(clean());
+});
+
+gulp.task('buildHTML', function() {
+	return gulp.src('partials/*.html')
+		.pipe(gulp.dest('dist/partials'));
+});
+
+gulp.task('buildCSS', function() {
+	var files = [
+		'src/ssi.css',
+		'node_modules/bootflat/css/bootstrap.min.css',
+		'node_modules/bootflat/bootflat/css/bootflat.min.css',
+		'node_modules/slick-carousel/slick/slick.css',
+		'node_modules/slick-carousel/slick/slick-theme.css'
+	];
+	return gulp.src(files)
+		.pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('buildJS', function() {
+	var files = [
+		'node_modules/jquery/dist/jquery.min.js',
+		'node_modules/bootstrap/dist/js/bootstrap.min.js',
+		'node_modules/angular/angular.min.js',
+		'node_modules/slick-carousel/slick/slick.min.js',
+		'js/app.js', 'js/diretivas.js', 'js/script.js'
+	];
+	return gulp.src(files)
+		.pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('makeDist', ['clean', 'buildHTML', 'buildCSS', 'buildJS'], function() {
+	return gulp.src('index.html')
 		.pipe(gulp.dest('dist'));
 });
 
