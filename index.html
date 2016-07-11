@@ -34,7 +34,11 @@
 		</div>
 	</nav>
 
-	<header></header>
+	<header>
+		<div style="position: relative; left: 0; top: 0;">
+			<img src="img/header_texto.png" style="position: relative; top: 0; left: 0;"/>
+		</div>
+	</header>
 
 	<main>
 		<section sobre></section>
@@ -42,12 +46,17 @@
 		
 		<section class="palestrantes container" ng-controller="palestranteCtrl">
 			<h2>Palestrantes</h2>
-			<h3 class="text-info">Em Breve!</h3>
 			<div class="biografias">
 				<div ng-repeat="palestrante in palestrantes">
 					<h4>{{palestrante.nome}}</h4>
-					<img class="img-responsive" ng-src="{{palestrante.foto}}" alt="">
-					<p>{{palestrante.descricao}}</p>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4">
+							<img class="img-responsive img-rounded" ng-src="{{palestrante.foto}}" alt="">
+						</div>
+						<div class="col-xs-12 cold-sm-8">
+							<p>{{palestrante.descricao}}</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

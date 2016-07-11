@@ -1,38 +1,35 @@
 u<section class="programacao row" ng-controller="calendarioCtrl">
 
 	<div class="container">
-        <h2>Programação</h2>
+		<h2>Programação</h2>
 
-        <div class="btn-group btn-group-justified" role="group">
-            <div class="btn-group">
-                <button class="btn btn-default">Por Dia</button>
-            </div>
-            <div class="btn-group">
-                <button class="btn btn-secondary">Por Tema</button>
-            </div>
-        </div>
+		<ul class="nav nav-pills">
+			<li role="presentation" class="active"><a href="">16 (terça-feira)</a></li>
+			<li role="presentation"><a href="">17 (quarta-feira)</a></li>
+			<li role="presentation"><a href="">18 (quinta-feira)</a></li>
+		</ul>
 
-        <hr>
+		<hr>
 
-        <table class="table table-striped table-hover">
-            <thead>
-            <tr>
-                <th colspan="2">Horário</th>
-                <th>Palestrante</th>
-                <th>Palestra</th>
-                <th>Local</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="palestra in palestras">
-                <td>{{palestra.horario.inicio}}</td>
-                <td>{{palestra.horario.fim}}</td>
-                <td>{{palestra.palestrante}}</td>
-                <td>{{palestra.titulo}}</td>
-                <td>{{paletra.local}}</td>
-            </tr>
-            </tbody>
-        </table>
-        <div class="btn btn-default">Adicionar ao Google Calendar</div>
-    </div>
+		<table class="table table-striped table-hover">
+			<thead>
+			<tr>
+				<th colspan="2">Horário</th>
+				<th>Palestrante</th>
+				<th>Palestra</th>
+				<th>Local</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="palestra in palestras">
+				<td>{{palestra.horario.inicio}}</td>
+				<td>{{palestra.horario.fim}}</td>
+				<td>{{palestra.palestrante}}</td>
+				<td>{{palestra.titulo}}</td>
+				<td>{{paletra.local}}</td>
+			</tr>
+			</tbody>
+		</table>
+		<div class="btn btn-default">Adicionar ao Google Calendar</div>
+	</div>
 </section>
