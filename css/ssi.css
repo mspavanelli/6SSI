@@ -19,13 +19,14 @@ section h2, section h3 {
 	color: #391954;
 }
 
-.temas {
+.conteudo {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
-.temas img {
-	width: 70%;
-	height: 70%;
+
+.conteudo img {
+	/*max-width: 30vw;*/
 }
 
 .contato {
@@ -48,21 +49,6 @@ table, table th {
 .banner img {
 	min-height: 40vh;
 	min-width: 375px;
-}
-
-.panel-primary > .panel-heading {
-	background-color: #511d7d;
-	border-color: #511d7d;
-}
-
-.panel-success > .panel-heading {
-	background-color: #AAB2BD;
-	border-color: #AAB2BD;
-}
-
-.panel-warning > .panel-heading {
-	background-color: #434A54;
-	border-color: #434A54;
 }
 
 .biografias img {
@@ -93,13 +79,9 @@ table, table th {
   	justify-content: space-around;
 }
 
-section.parceria .marca {
-	/*margin: auto 5px;*/
-}
-
 section.parceria img {
-	max-height: 200px;
-	max-width: 300px;
+	max-height: 100px;
+	max-width: 150px;
 	margin-bottom: 30px;
 }
 

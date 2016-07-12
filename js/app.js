@@ -10,7 +10,12 @@ angular.module('ssi', [])
 		[
 			{
 				"nome": "DASI",
-				"logo": "http://placehold.it/350x150/602d8c/ffffff/?text=DASI",
+				"logo": "img/logo_dasi.jpg",
+				"url": "http://dasiusp.com"
+			},
+			{
+				"nome": "Comissão Organizadora",
+				"logo": "img/logo_comissao.png",
 				"url": "http://dasiusp.com"
 			}
 		];
@@ -23,7 +28,7 @@ angular.module('ssi', [])
 			},
 			{
 				"nome": "Caelum",
-				"logo": "img/logo_caelum.svg",
+				"logo": "http://placehold.it/350x150/?text=Caelum",
 				"url": "http://www.caelum.com.br"
 			},
 			{
@@ -51,15 +56,19 @@ angular.module('ssi', [])
 			},
 			{
 				"nome": "EACH",
-				"logo": "http://placehold.it/350x150/37c2d8/ffffff/?text=EACH",
+				"logo": "img/logo_each.jpg",
 				"url": "http://www5.each.usp.br"
 			},
 			{
 				"nome": "USP",
-				"logo": "http://placehold.it/350x150/fcb421/ffffff/?text=USP",
+				"logo": "img/logo_usp.png",
 				"url": "http://www5.usp.br"
+			},
+			{
+				"nome": "PRCEU",
+				"logo": "img/logo_prceu.png",
+				"url": "http://prceu.usp.br"
 			}
-
 		];
 	});
 
