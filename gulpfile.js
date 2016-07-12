@@ -18,7 +18,7 @@ gulp.task('buildImages', function() {
 });
 
 gulp.task('clean', function() {
-	return gulp.src('dist')
+	return gulp.src('dist/**/*')
 		.pipe(clean());
 });
 
@@ -29,7 +29,7 @@ gulp.task('buildHTML', function() {
 
 gulp.task('buildCSS', function() {
 	var files = [
-		'src/ssi.css',
+		'css/ssi.css',
 		'node_modules/bootflat/css/bootstrap.min.css',
 		'node_modules/bootflat/bootflat/css/bootflat.min.css',
 		'node_modules/slick-carousel/slick/slick.css',
@@ -51,13 +51,13 @@ gulp.task('buildJS', function() {
 		.pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('makeDist', ['clean', 'buildHTML', 'buildCSS', 'buildJS'], function() {
+gulp.task('makeDist', ['clean', 'buildHTML', 'buildCSS', 'buildJS', 'buildImages'], function() {
 	return gulp.src('index.html')
 		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('deploy', ['makeDist'], function() {
-	return gulp.src('dist/*')
+	return gulp.src('dist/**/*')
 		.pipe(ghPagesDeploy());
 })
 
