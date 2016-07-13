@@ -1,3 +1,48 @@
+@font-face {
+	font-family: Geometric;
+	src: url(fontes/Geometric_Book.otf);
+}
+
+@font-face {
+	font-family: Geometric;
+	src: url(fontes/Geometric_Regular.otf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Geometric;
+	src: url(fontes/Geometric_DemiBold.otf);
+	font-weight: bolder;
+}
+
+@font-face {
+	font-family: Geometric;
+	src: url(fontes/Geometric_Light.otf);
+	font-weight: lighter;
+}
+
+@media (max-width: 767px)
+  body {
+    padding: 0;
+  }
+}
+
+h1, h2, h3, h4, p, ul, nav {
+	font-family: Geometric;
+}
+
+h2 {
+	margin-bottom: 40px;
+}
+
+.panel p {
+	font-size: 16px;
+}
+
+.body {
+	width: 100vw;
+}
+
 header {
 	background-image: url(../img/header_bg.png);
 	height: 100vh;
@@ -23,10 +68,6 @@ section h2, section h3 {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-}
-
-.conteudo img {
-	/*max-width: 30vw;*/
 }
 
 .contato {
@@ -57,15 +98,16 @@ table, table th {
 
 .slick-prev:before, .slick-next:before {
 	color: #434a54;
-}
-
-.palestrante {
-	display: flex;
-	align-items: center;
+	font-size: 40px;
 }
 
 .panel {
 	margin-top: 20px;
+}
+
+.nav.nav-pills {
+	display: flex;
+	justify-content: center;
 }
 
 .nav-pills>li>a {
@@ -77,8 +119,22 @@ table, table th {
 }
 
 .mapa {
+    position: relative;
+    margin: auto;
+    float: none;
 	display: flex;
 	justify-content: center;
+    padding-bottom: 350px; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+
+.mapa iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	// width: 100% !important;
+	// height: 100% !important;
 }
 
 .marcas {
