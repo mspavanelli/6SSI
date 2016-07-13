@@ -1,0 +1,15 @@
+<div class="palestrante row">
+	<div class="col-xs-12 col-sm-6">
+		<img class="img-responsive img-rounded center-block" ng-src="{{foto}}" alt="">
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title">{{nome}}</div>
+			</div>
+			<div class="panel-body">
+				<p>{{descricao | limitTo: 700}}</p>
+			</div>
+		</div>
+	</div>
+</div>

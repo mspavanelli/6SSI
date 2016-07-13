@@ -5,6 +5,17 @@ angular.module('ssi')
 		templateUrl: 'partials/sobre.html'
 	}
 })
+.directive('palestrante', function() {
+	return {
+		restrict: 'AE', 
+		scope: {
+			nome: '@',
+			foto: '@',
+			descricao: '@'
+		},
+		templateUrl: 'partials/palestrante.html'
+	}
+})
 .directive('programacao', function() {
 	return {
 		restrict: 'AE', 
