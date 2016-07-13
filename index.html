@@ -3,12 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>6ª Semana de Sistemas de Informação</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<!--     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="node_modules/bootflat/bootflat/css/bootflat.min.css">
 	<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
 	<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/ssi.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootflat.min.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<link rel="stylesheet" href="css/ssi.css">
 </head>
 <body ng-app="ssi">
 
@@ -47,17 +52,8 @@
 		<section class="palestrantes container" ng-controller="palestranteCtrl">
 			<h2>Convidados</h2>
 			<div class="biografias">
-				<div ng-repeat="palestrante in palestrantes">
-					<h4>{{palestrante.nome}}</h4>
-					<div class="row">
-						<div class="col-xs-12 col-sm-4">
-							<img class="img-responsive img-rounded" ng-src="{{palestrante.foto}}" alt="">
-						</div>
-						<div class="col-xs-12 cold-sm-8">
-							<p>{{palestrante.descricao | limitTo: 700}}</p>
-
-						</div>
-					</div>
+				<div ng-repeat="palestrante in palestrantes" class="container">
+					<palestrante nome="{{palestrante.nome}}" foto="{{palestrante.foto}}" descricao="{{palestrante.descricao}}"></palestrante>
 				</div>
 			</div>
 		</section>
@@ -78,12 +74,19 @@
 		</div>
 	</footer>
 	
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<!-- <script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="node_modules/angular/angular.min.js"></script>
 	<script src="node_modules/slick-carousel/slick/slick.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/diretivas.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/diretivas.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

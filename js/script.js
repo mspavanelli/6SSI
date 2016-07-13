@@ -1,3 +1,5 @@
 $(document).ready(function(){
-	$('.biografias').slick();
+	$('.biografias').slick({
+		// centerMode: true;
+	});
 });

@@ -55,6 +55,19 @@ table, table th {
 	max-height: 300px
 }
 
+.slick-prev:before, .slick-next:before {
+	color: #434a54;
+}
+
+.palestrante {
+	display: flex;
+	align-items: center;
+}
+
+.panel {
+	margin-top: 20px;
+}
+
 .nav-pills>li>a {
 	color: #511d7d;
 }
