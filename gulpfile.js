@@ -33,7 +33,8 @@ gulp.task('buildCSS', function() {
 		'node_modules/bootflat/css/bootstrap.min.css',
 		'node_modules/bootflat/bootflat/css/bootflat.min.css',
 		'node_modules/slick-carousel/slick/slick.css',
-		'node_modules/slick-carousel/slick/slick-theme.css'
+		'node_modules/slick-carousel/slick/slick-theme.css',
+		'css/fontes/*'
 	];
 	return gulp.src(files)
 		.pipe(gulp.dest('dist/css'));
