@@ -13,7 +13,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('buildImages', function() {
-	gulp.src('img/*')
+	gulp.src('img/**/*')
 	.pipe(gulp.dest('dist/img'));
 });
 
@@ -58,7 +58,9 @@ gulp.task('makeDist', ['clean', 'buildHTML', 'buildCSS', 'buildJS', 'buildImages
 
 gulp.task('deploy', ['makeDist'], function() {
 	return gulp.src('dist/**/*')
-		.pipe(ghPagesDeploy());
+		.pipe(ghPagesDeploy())
+		.pipe(gulp.src('dist'))
+		.pipe(clean());
 })
 
 gulp.task('default', ['server']);

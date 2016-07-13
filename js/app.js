@@ -62,11 +62,6 @@ angular.module('ssi', [])
 				"nome": "Iteris",
 				"logo": "img/logo_iteris.png",
 				"url": "http://www.iteris.com.br"
-			},
-			{
-				"nome": "Mãe Terra",
-				"logo": "img/logo_mae_terra.png",
-				"url": "http://www.maeterra.com.br"
 			}
 		];
 		$scope.apoiadores =
@@ -90,6 +85,11 @@ angular.module('ssi', [])
 				"nome": "PRCEU",
 				"logo": "img/logo_prceu.png",
 				"url": "http://prceu.usp.br"
+			},
+			{
+				"nome": "Mãe Terra",
+				"logo": "img/logo_mae_terra.png",
+				"url": "http://www.maeterra.com.br"
 			}
 		];
 	});
