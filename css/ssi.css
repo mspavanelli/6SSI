@@ -1,12 +1,11 @@
 @font-face {
-	font-family: Geometric;
+	font-family: Geometric Book;
 	src: url(fontes/Geometric_Book.otf);
 }
 
 @font-face {
 	font-family: Geometric;
 	src: url(fontes/Geometric_Regular.otf);
-	font-weight: bold;
 }
 
 @font-face {
@@ -23,10 +22,15 @@
 
 * {
 	font-family: Geometric;
+	// font-weight: 600;
 }
 
 h2 {
 	margin-bottom: 40px;
+}
+
+p {
+	font-size: medium;
 }
 
 .panel p {
@@ -62,6 +66,11 @@ section h2, section h3 {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+}
+
+.conteudo span {
+	font-family: Geometric;
+	font-weight: bolder;
 }
 
 .contato {
@@ -112,7 +121,7 @@ table, table th {
 	border-color: #511d7d;
 }
 
-.mapa {
+.mapa, .inscricao {
     position: relative;
     margin: auto;
     float: none;
@@ -123,7 +132,7 @@ table, table th {
     overflow: hidden;
 }
 
-.mapa iframe {
+.mapa iframe, .inscricao iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
