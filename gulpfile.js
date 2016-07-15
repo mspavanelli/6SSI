@@ -13,7 +13,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('buildImages', function() {
-	gulp.src('img/**/*')
+	gulp.src('img/*')
 	.pipe(gulp.dest('dist/img'));
 });
 
@@ -33,9 +33,11 @@ gulp.task('buildCSS', function() {
 		'node_modules/bootflat/css/bootstrap.min.css',
 		'node_modules/bootflat/bootflat/css/bootflat.min.css',
 		'node_modules/slick-carousel/slick/slick.css',
-		'node_modules/slick-carousel/slick/slick-theme.css',
-		'css/fontes/*'
+		'node_modules/slick-carousel/slick/slick-theme.css'		
 	];
+
+	gulp.src('css/fontes/*')
+		.pipe(gulp.dest('dist/css/fontes'));
 	return gulp.src(files)
 		.pipe(gulp.dest('dist/css'));
 });
