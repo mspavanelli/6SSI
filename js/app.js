@@ -66,13 +66,13 @@ angular.module('ssi', [])
 		$scope.organizadores =
 		[
 			{
-				"nome": "DASI",
-				"logo": "img/logo_dasi.jpg",
-				"url": "http://dasiusp.com"
-			},
-			{
 				"nome": "Comissão Organizadora",
 				"logo": "img/logo_comissao.png",
+				"url": ""
+			},
+			{
+				"nome": "DASI",
+				"logo": "img/logo_dasi.jpg",
 				"url": "http://dasiusp.com"
 			}
 		];
@@ -84,11 +84,6 @@ angular.module('ssi', [])
 				"url": "http://www.btcompany.com.br"
 			},
 			{
-				"nome": "Caelum",
-				"logo": "http://placehold.it/350x150/?text=Caelum",
-				"url": "http://www.caelum.com.br"
-			},
-			{
 				"nome": "Conquest",
 				"logo": "img/logo_conquest.png",
 				"url": "http://www.conquest.com.br"
@@ -97,6 +92,21 @@ angular.module('ssi', [])
 				"nome": "Iteris",
 				"logo": "img/logo_iteris.png",
 				"url": "http://www.iteris.com.br"
+			},
+			{
+				"nome": "LexisNexis",
+				"logo": "img/logo_lexisNexis.png",
+				"url": "http://www.lexisnexis.com"
+			},
+			{
+				"nome": "SAS",
+				"logo": "img/logo_sas.png",
+				"url": "http://www.sas.com/pt_br/home.html"
+			},
+			{
+				"nome": "Caelum",
+				"logo": "http://placehold.it/350x150/?text=Caelum",
+				"url": "http://www.caelum.com.br"
 			}
 		];
 		$scope.apoiadores =
@@ -107,6 +117,16 @@ angular.module('ssi', [])
 				"url": "https://www.casadocodigo.com.br/"
 			},
 			{
+				"nome": "Mãe Terra",
+				"logo": "img/logo_mae_terra.png",
+				"url": "http://www.maeterra.com.br"
+			},
+			{
+				"nome": "PRCEU",
+				"logo": "img/logo_prceu.png",
+				"url": "http://prceu.usp.br"
+			},
+			{
 				"nome": "EACH",
 				"logo": "img/logo_each.jpg",
 				"url": "http://www5.each.usp.br"
@@ -115,16 +135,6 @@ angular.module('ssi', [])
 				"nome": "USP",
 				"logo": "img/logo_usp.png",
 				"url": "http://www5.usp.br"
-			},
-			{
-				"nome": "PRCEU",
-				"logo": "img/logo_prceu.png",
-				"url": "http://prceu.usp.br"
-			},
-			{
-				"nome": "Mãe Terra",
-				"logo": "img/logo_mae_terra.png",
-				"url": "http://www.maeterra.com.br"
 			}
 		];
 	});

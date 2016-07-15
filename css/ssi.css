@@ -21,13 +21,7 @@
 	font-weight: lighter;
 }
 
-@media (max-width: 767px)
-  body {
-    padding: 0;
-  }
-}
-
-h1, h2, h3, h4, p, ul, nav {
+* {
 	font-family: Geometric;
 }
 
@@ -150,7 +144,7 @@ table, table th {
 
 section.parceria img {
 	max-height: 100px;
-	max-width: 150px;
+	max-width: 222px;
 	margin-bottom: 30px;
 }
 
