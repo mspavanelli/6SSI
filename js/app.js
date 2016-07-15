@@ -66,13 +66,13 @@ angular.module('ssi', [])
 		$scope.organizadores =
 		[
 			{
-				"nome": "DASI",
-				"logo": "img/logo_dasi.jpg",
+				"nome": "Comissão Organizadora",
+				"logo": "img/logo_comissao.png",
 				"url": "http://dasiusp.com"
 			},
 			{
-				"nome": "Comissão Organizadora",
-				"logo": "img/logo_comissao.png",
+				"nome": "DASI",
+				"logo": "img/logo_dasi.jpg",
 				"url": "http://dasiusp.com"
 			}
 		];
@@ -84,11 +84,6 @@ angular.module('ssi', [])
 				"url": "http://www.btcompany.com.br"
 			},
 			{
-				"nome": "Caelum",
-				"logo": "http://placehold.it/350x150/?text=Caelum",
-				"url": "http://www.caelum.com.br"
-			},
-			{
 				"nome": "Conquest",
 				"logo": "img/logo_conquest.png",
 				"url": "http://www.conquest.com.br"
@@ -97,6 +92,21 @@ angular.module('ssi', [])
 				"nome": "Iteris",
 				"logo": "img/logo_iteris.png",
 				"url": "http://www.iteris.com.br"
+			},
+			{
+				"nome": "LexisNexis",
+				"logo": "img/logo_lexisNexis.png",
+				"url": "http://www.lexisnexis.com"
+			},
+			{
+				"nome": "SAS",
+				"logo": "img/logo_sas.png",
+				"url": "http://www.sas.com/pt_br/home.html"
+			},
+			{
+				"nome": "Caelum",
+				"logo": "http://placehold.it/350x150/?text=Caelum",
+				"url": "http://www.caelum.com.br"
 			}
 		];
 		$scope.apoiadores =

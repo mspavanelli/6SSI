@@ -59,9 +59,7 @@ gulp.task('makeDist', ['clean', 'buildHTML', 'buildCSS', 'buildJS', 'buildImages
 
 gulp.task('deploy', ['makeDist'], function() {
 	return gulp.src('dist/**/*')
-		.pipe(ghPagesDeploy())
-		.pipe(gulp.src('dist'))
-		.pipe(clean());
+		.pipe(ghPagesDeploy());
 })
 
 gulp.task('default', ['server']);
