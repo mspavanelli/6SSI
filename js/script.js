@@ -8,8 +8,5 @@ var scroll = function(section) {
 
 $(document).ready(function(){
 	$('.biografias').slick();
-
-	// rolagem
 	['sobre', 'palestrantes', 'programacao', 'localizacao'].forEach(scroll);
-	// $('.navbar-brand').click(function() {$('html, body').animate({scrollTop: 0 }); });
 });
