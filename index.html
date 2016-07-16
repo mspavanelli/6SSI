@@ -22,7 +22,7 @@
 <body ng-app="ssi">
 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
@@ -44,10 +44,12 @@
 	</nav>
 
 	<header>
-		<div id="header_images">
+		<div class="col-xs-12 col-md-6">
 			<img src="img/header_logo.png" id="header_logo"/>
-			<img src="img/header_texto.png" id="header_texto"/>
 		</div>
+		<div class="col-xs-12 col-md-6">
+			<img src="img/header_texto.png" id="header_texto"/>
+		</div>	
 	</header>
 	
 	<main>

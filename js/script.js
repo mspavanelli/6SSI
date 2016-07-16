@@ -7,6 +7,14 @@ var scroll = function(section) {
 }
 
 $(document).ready(function(){
-	$('.biografias').slick();
+	$('.biografias').slick({
+		dots: true,
+		infinite: true,
+		speed: 600,
+		slidesToShow: 1,
+		autoplay: true,
+		autoplaySpeed: 4000,
+	});
+	
 	['sobre', 'palestrantes', 'programacao', 'localizacao'].forEach(scroll);
 });
