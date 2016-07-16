@@ -49,12 +49,30 @@ header {
 	padding: 0;
 	margin: 0;
 	background-size: cover;
-	display: flex;
-	align-items: center;
 }
 
-header img {
-	max-width: 100vw;
+#header_images {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	margin: 5px 20px 0 20px;
+	padding-top: 51px;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	// border: 1px solid white;
+}
+
+#header_logo {
+	max-width: 30vw;
+	max-height: 90vh;
+}
+
+#header_texto {
+	max-width: 50vw;
+	max-height: 90vh;
 }
 
 section h2, section h3 {
@@ -127,9 +145,12 @@ table, table th {
     float: none;
 	display: flex;
 	justify-content: center;
-    padding-bottom: 350px; // This is the aspect ratio
-    height: 0;
     overflow: hidden;
+}
+
+.mapa {
+    height: 0;
+    padding-bottom: 350px; // This is the aspect ratio
 }
 
 .mapa iframe, .inscricao iframe {
@@ -162,5 +183,18 @@ section.parceria img {
 }
 
 footer.footer {
-	margin-top: 100px;
+	margin-top: 15px;
+}
+
+footer.footer p {
+	color: #eee;
+	margin-bottom: 3px;
+}
+
+footer.footer i {
+	color: whitesmoke;
+    padding: 5px;
+    margin-right: 3px;
+    background-color: gray;
+    border-radius: 3px;
 }

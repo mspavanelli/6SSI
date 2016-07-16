@@ -22,10 +22,16 @@ angular.module('ssi')
 		templateUrl: 'partials/programacao.html'
 	}
 })
-.directive('info', function() {
+.directive('localizacao', function() {
 	return {
 		restrict: 'AE', 
-		templateUrl: 'partials/info.html'
+		templateUrl: 'partials/localizacao.html'
+	}
+})
+.directive('inscricao', function() {
+	return {
+		restrict: 'AE', 
+		templateUrl: 'partials/inscricao.html'
 	}
 })
 .directive('parcerias', function() {
