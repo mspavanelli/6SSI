@@ -11,8 +11,8 @@ angular.module('ssi', [])
 				'descricao': 'Engenheiro de inovação, é co-organizador do Google Developer Group São Paulo (GDG-SP) e membro do Garoa Hacker Clube. Viabiliza ideias factíveis com tecnologia, contribuindo em projetos open data, através da comunidade Transparência Hacker. Desenvolvedor desde 2000, criou o sms2blog: o primeiro gateway de SMS para Twitter no Brasil e atuou em agências digitais de marcas como Google, Coca-Cola, Nestlé, Itaucard, Fiat, GE, Globo Minas, Iveco, Usiminas, Vivo and Yamaha. Entre suas especialidades, estão Internet das Coisas, APIs, JavaScript, HTML, Arduino, Python e .Net'
 			},
 			{
-				'nome': 'Fernando Badapoulos',
-				'foto': 'img/fernando_badapoulos.png',
+				'nome': 'Fernando Babadopulos',
+				'foto': 'img/fernando_babadopulos.png',
 				'descricao': 'Arquiteto de software, empresário e entusiasta de novas tecnologias, foi responsável pelo desenvolvimento de algumas das aplicações web mais conhecidas do Brasil e do exterior. Palestrante frequente em conferências nacionais e internacionais. Com mais de 15 anos de experiência na área de internet, é especialista na criação e concepção de sistemas de alto desempenho. Mestre em engenharia da informação pela Universidade Federal do ABC e bacharel em ciências da computação pelo Centro Universitário da FEI, hoje Fernando é CTO da Tail, a maior provedora de ciência de dados para o mercado publicitário do Brasil e que ganhou o Duke’s Choice Award 2015.'
 			},
 			{
@@ -68,7 +68,7 @@ angular.module('ssi', [])
 			{
 				"nome": "Comissão Organizadora",
 				"logo": "img/logo_comissao.png",
-				"url": ""
+				"url": "https://www.facebook.com/SSIUSP"
 			},
 			{
 				"nome": "DASI",
