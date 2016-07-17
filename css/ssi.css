@@ -37,20 +37,18 @@ p {
 	font-size: 16px;
 }
 
-body {
-	width: 100vw;
+html, body {
+	overflow-x: hidden;
+}
+html, body. div{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
 }
 
 nav.navbar {
 	/*width: 100vw;*/
 	width: auto;
-}
-
-@media (min-width: 768px){
-.navbar
- {
-   min-width: 1px;
- }
 }
 
 header {
@@ -63,26 +61,82 @@ header {
 	background-size: cover;
 }
 
-/*#header_logo {
-	max-width: 30vw;
-	/*max-height: 90vh;*/
-/*}*/
+header .row {
+	padding-top: 51px;
+}
 
-/*#header_texto {
-	max-width: 90vw;
-	bottom: 10px;*/
-	/*max-height: 90vh;
-}*/
-
-/*@media (min-width: 992px) {
-	#header_texto {
-		max-width: 50vw;
+@media screen and (orientation: portrait) {
+	#header_logo, #header_texto {
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
 	}
-}*/
+	#header_logo {
+		position: absolute;
+		top: -30vh;
+		left: 0;
+		max-height: 30vh;
+		min-height: 100px;
+		width: 30vw;
+		min-width: 100px;
+		margin: auto;
+	}
+	#header_texto {
+		position: absolute;
+		top: 35vh;
+		left: 0;
+		max-height: 30vh;
+		min-height: 100px;
+		width: 40vw;
+		min-width: 100px;
+		margin: auto;	
+	}
+}
+
+@media screen and (orientation: landscape) {
+	#header_logo, #header_texto {
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	#header_logo {
+		position: absolute;
+		top: 0;
+		left: -45vw;
+		max-height: 30vw;
+		min-height: 100px;
+		width: 30vw;
+		min-width: 100px;
+		margin: auto;
+	}
+	#header_texto {
+		position: absolute;
+		top: 0;
+		left: 50vw;
+		max-height: 30vh;
+		min-height: 100px;
+		width: 30vw;
+		min-width: 100px;
+		margin: auto;	
+	}
+}
 
 section h2, section h3 {
 	text-align: center;
 	color: #391954;
+}
+
+.floated {
+	float: right;
+	width: 400px;
+	padding-left: 20px;
+	padding-bottom: 20px;
 }
 
 .conteudo {
@@ -106,6 +160,7 @@ section h2, section h3 {
 
 table, table th {
 	text-align: center;
+	color: #511d7d;
 }
 
 .banner {
@@ -122,13 +177,26 @@ table, table th {
 	max-height: 300px
 }
 
+.slick-prev:before {
+	margin-right: -50px;
+}
+
+.slick-next:before {
+	margin-left: -50px;
+}
 .slick-prev:before, .slick-next:before {
-	color: #434a54;
-	font-size: 40px;
+	color: #391954;
+	font-size: 20px;
 }
 
 .painel {
 	margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+	.descricao {
+		margin-right: 25px;
+	}
 }
 
 .nav.nav-pills {
@@ -188,6 +256,7 @@ section.parceria img {
 }
 
 footer.footer {
+	background-color: #391954;
 	margin-top: 15px;
 }
 
@@ -200,6 +269,17 @@ footer.footer i {
 	color: whitesmoke;
     padding: 5px;
     margin-right: 3px;
-    background-color: gray;
     border-radius: 3px;
+}
+
+footer.footer a {
+	color: whitesmoke;
+}
+
+footer.footer a:hover {
+	text-decoration: underline;
+}
+
+footer.footer p {
+	margin-top: 5px;
 }
