@@ -51,6 +51,10 @@ nav.navbar {
 	width: auto;
 }
 
+.navbar-brand {
+	color: white;
+}
+
 header {
 	background-image: url(../img/header_bg.png);
 	height: 100vh;
@@ -127,6 +131,15 @@ header .row {
 	}
 }
 
+.navbar-inverse {
+	background-color: #1d092d;
+	border-color: #1d092d;
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text, a.navbar-brand {
+	color: white !important;
+}
+
 section h2, section h3 {
 	text-align: center;
 	color: #391954;
@@ -143,6 +156,9 @@ section h2, section h3 {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	overflow-x: scroll;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .conteudo span {
@@ -223,15 +239,15 @@ table, table th {
 
 .mapa {
     height: 0;
-    padding-bottom: 350px; // This is the aspect ratio
+    padding-bottom: 350px; /*This is the aspect ratio*/
 }
 
 .mapa iframe, .inscricao iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
-	// width: 100% !important;
-	// height: 100% !important;
+	/*width: 100% !important;*/
+	/*height: 100% !important;*/
 }
 
 .marcas {
@@ -256,8 +272,11 @@ section.parceria img {
 }
 
 footer.footer {
-	background-color: #391954;
+	/*background-color: #391954;*/
+	background-image: url(../img/footer.png);
 	margin-top: 15px;
+	color: white;
+	padding: 15px;
 }
 
 footer.footer p {
@@ -266,14 +285,14 @@ footer.footer p {
 }
 
 footer.footer i {
-	color: whitesmoke;
+	color: white;
     padding: 5px;
     margin-right: 3px;
     border-radius: 3px;
 }
 
 footer.footer a {
-	color: whitesmoke;
+	color: white;
 }
 
 footer.footer a:hover {
@@ -282,4 +301,16 @@ footer.footer a:hover {
 
 footer.footer p {
 	margin-top: 5px;
+}
+
+footer.footer ul {
+	list-style-type: none;
+	padding: 0;
+
+}
+
+@media (max-width: 992px) {
+	footer.footer {
+		text-align: center !important;
+	}
 }
