@@ -13,8 +13,8 @@ $(document).ready(function(){
 		speed: 600,
 		slidesToShow: 1,
 		autoplay: true,
-		autoplaySpeed: 4000,
+		autoplaySpeed: 10000,
 	});
 	
-	['sobre', 'palestrantes', 'programacao', 'localizacao'].forEach(scroll);
+	['sobre', 'palestrantes', 'programacao', 'inscricao', 'localizacao'].forEach(scroll);
 });
