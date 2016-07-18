@@ -6,6 +6,31 @@ angular.module('ssi', [])
 		$scope.palestrantes =
 		[
 			{
+				"nome": "Cláudia Rosas",
+				"foto": "img/p_claudia_rosas.png",
+				"descricao": "Cláudia Rosas é Psicóloga formada na Universidade Metodista de São Paulo, com MBA em Gestão de Pessoas na FGV.Especialista em Recrutamento e Seleção de Profissionais de TI há 10 anos e gestão de equipes de alto desempenho, atualmente é a gestora responsável pelo time de Aquisição de Talentos da Consultoria Conquest One."
+			},
+			{
+				"nome": "Márcio Ribeiro",
+				"foto": "img/p_marcio_ribeiro.png",
+				"descricao": "Márcio Moretto Ribeiro é professor de Sistemas de Informação na Escola de Artes e Humanidades da USP e pesquisador do Grupo de Políticas Públicas de Acesso à Informação. Sua tese de doutorado sobre revisão de crenças e lógicas de descrição, defendida em 2010, ganhou o prêmio de melhor tese do ano pela Sociedade Brasileira de Computação. Atualmente seus campos de estudo incluem privacidade, vigilância e a polarização do debate política nas redes sociais."
+			},
+			{
+				"nome": "Jorge Vieira",
+				"foto": "img/p_jorge_vieira.png",
+				"descricao": "Jorge Vieira é um programador e entusiasta de agile que acabou se apaixonando por empreendedorismo. Bacharel em Ciência da Computação pela Universidade São Judas Tadeu, possui mais de seis anos de experiência em desenvolvimento de software, dos quais três são dedicados ao Desenvolvimento de Games. É Cofundador da Etheral Flame Studios, empresa paulistana que desenvolveu o game Spaceship Overdrive, o qual foi premiado como “Melhor jogo para portáteis/mobile da Brasil Game Show 2015” pela Brazil Game Awards e foi semifinalista no BIG Festival 2016."
+			},
+			{
+				"nome": "Jéssica",
+				"foto": "img/p_jessica.png",
+				"descricao": "Jessica é comunicóloga com ênfase em novas mídias pela PUC-SP e Youtuber dos canais \"Canal das Bee\" e \"Gorda de Boa\", canais focados em ativismo LGBT, empoderamento feminino e humor."
+			},
+			{
+				"nome": "Erick Varzot",
+				"foto": "img/p_erick_varzot.png",
+				"descricao": "Erick Varzot é desenvolvedor de Games e Dungeon Master. Bacharel em Ciência da Computação na Universidade São Judas Tadeu, atua profissionalmente em TI desde 2012 e passou a trabalhar com Pesquisa e Desenvolvimento de Games desde 2013. É Cofundador da Etheral Flame Studios, empresa paulistana que desenvolveu o game Spaceship Overdrive, o qual foi premiado como “Melhor jogo para portáteis/mobile da Brasil Game Show 2015” pela Brazil Game Awards e foi semifinalista no BIG Festival 2016."
+			},
+			{
 				'nome': 'Luis Leão',
 				'foto': 'img/luis_leao.png',
 				'descricao': 'Engenheiro de inovação, é co-organizador do Google Developer Group São Paulo (GDG-SP) e membro do Garoa Hacker Clube. Viabiliza ideias factíveis com tecnologia, contribuindo em projetos open data, através da comunidade Transparência Hacker. Desenvolvedor desde 2000, criou o sms2blog: o primeiro gateway de SMS para Twitter no Brasil e atuou em agências digitais de marcas como Google, Coca-Cola, Nestlé, Itaucard, Fiat, GE, Globo Minas, Iveco, Usiminas, Vivo and Yamaha. Entre suas especialidades, estão Internet das Coisas, APIs, JavaScript, HTML, Arduino, Python e .Net'
@@ -46,7 +71,7 @@ angular.module('ssi', [])
 				'descricao': 'Thiago Araújo possui graduação em Ciência da Computação pela UNIP e quatro certificações na área de Banco de Dados e Analytics. Trabalhou com adminstração e integração de dados, ministrando diversos cursos na IBM relacionados à essa área. Atualmente trabalha como Developer em projetos de Watson para CIO no Holmes Squad.'
 			},
 			{
-				'nome': 'Paulo Roberto Alves de Oliveira',
+				'nome': 'Paulo Kretcheu',
 				'foto': 'img/paulo_roberto.png',
 				'descricao': 'Paulo Roberto Alves de Oliveira, mais conhecido pelo apelido Kretcheu, é membro tradicional da comunidade de Software Livre e defensor do conhecimento livre e acessível a todos, possuindo diversas certificações como LPI-C, UCP, Novell NCLA e DCTS. Administrador de redes a mais de 15 anos e professor universitário há 25, é formado em Engenharia Mecânica e pós-graduado em auditoria e segurança. Além disso é o idealizador e apresentador do Vídeo Blog: Kretcheu.com.br desde 2009.'
 			},
