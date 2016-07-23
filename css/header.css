@@ -1,5 +1,4 @@
 nav.navbar {
-	/*width: 100vw;*/
 	width: auto;
 }
 
@@ -24,62 +23,36 @@ header .row {
 @media screen and (orientation: portrait) {
 	#header_logo, #header_texto {
 		position: absolute;
-		top:0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		margin: auto;
+		max-height: 30vh;
+		max-width: 50vw;
+		height: auto;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	#header_logo {
-		position: absolute;
-		top: -30vh;
-		left: 0;
-		max-height: 30vh;
-		min-height: 100px;
-		width: 30vw;
-		min-width: 100px;
-		margin: auto;
+		top: 15%;
 	}
 	#header_texto {
-		position: absolute;
-		top: 35vh;
-		left: 0;
-		max-height: 30vh;
-		min-height: 100px;
-		width: 40vw;
-		min-width: 100px;
-		margin: auto;	
+		bottom: 15%;
 	}
 }
+
 
 @media screen and (orientation: landscape) {
 	#header_logo, #header_texto {
 		position: absolute;
-		top:0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		margin: auto;
+		margin-top: 15px;
+		max-height: 50vh;
+		max-width: 30vw;
+		width: auto;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 	#header_logo {
-		position: absolute;
-		top: 0;
-		left: -45vw;
-		max-height: 30vw;
-		min-height: 100px;
-		width: 30vw;
-		min-width: 100px;
-		margin: auto;
+		left: 15%;
 	}
 	#header_texto {
-		position: absolute;
-		top: 0;
-		left: 50vw;
-		max-height: 30vh;
-		min-height: 100px;
-		width: 30vw;
-		min-width: 100px;
-		margin: auto;	
+		right: 15%;
 	}
 }
 

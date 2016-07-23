@@ -87,10 +87,10 @@
 		<section parcerias></section>
 	</main>
 
-	<footer class="footer">
+	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-6" ng-controller="rodapeCtrl">
+				<div id="edicoes" ng-controller="rodapeCtrl">
 					<h5>Edições anteriores</h5>
 					<ul class="sites">
 						<li ng-repeat="site in sites">
@@ -102,7 +102,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-xs-12 col-md-6 text-right">
+				<div id="contato">
 					<h5>Contato</h5>
 					<i class="fa fa-facebook-official" aria-hidden="true"></i> <a href="http://www.fb.com/SSIUSP" target="_blank">fb.com/SSIUSP</a>
 					<br>
@@ -118,6 +118,7 @@
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
 	<script src="node_modules/slick-carousel/slick/slick.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/diretivas.js"></script>

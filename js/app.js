@@ -1,4 +1,4 @@
-angular.module('ssi', [])
+angular.module('ssi', ['ngSanitize'])
 	.controller('calendarioCtrl', function($scope) {
 		$scope.palestras = palestras;
 	})
@@ -6,29 +6,29 @@ angular.module('ssi', [])
 		$scope.palestrantes =
 		[
 			{
-				"nome": "Cláudia Rosas",
-				"foto": "img/p_claudia_rosas.png",
-				"descricao": "Cláudia Rosas é Psicóloga formada na Universidade Metodista de São Paulo, com MBA em Gestão de Pessoas na FGV.Especialista em Recrutamento e Seleção de Profissionais de TI há 10 anos e gestão de equipes de alto desempenho, atualmente é a gestora responsável pelo time de Aquisição de Talentos da Consultoria Conquest One."
+				'nome': 'Cláudia Rosas',
+				'foto': 'img/p_claudia_rosas.png',
+				'descricao': 'Cláudia Rosas é Psicóloga formada na Universidade Metodista de São Paulo, com MBA em Gestão de Pessoas na FGV. Especialista em Recrutamento e Seleção de Profissionais de TI há 10 anos e gestão de equipes de alto desempenho, atualmente é a gestora responsável pelo time de Aquisição de Talentos da Consultoria <a href="http://www.conquest.com.br">Conquest One</a>.',
 			},
 			{
-				"nome": "Márcio Ribeiro",
-				"foto": "img/p_marcio_ribeiro.png",
-				"descricao": "Márcio Moretto Ribeiro é professor de Sistemas de Informação na Escola de Artes e Humanidades da USP e pesquisador do Grupo de Políticas Públicas de Acesso à Informação. Sua tese de doutorado sobre revisão de crenças e lógicas de descrição, defendida em 2010, ganhou o prêmio de melhor tese do ano pela Sociedade Brasileira de Computação. Atualmente seus campos de estudo incluem privacidade, vigilância e a polarização do debate política nas redes sociais."
+				'nome': 'Márcio Ribeiro',
+				'foto': 'img/p_marcio_ribeiro.png',
+				'descricao': 'Márcio Moretto Ribeiro é professor de Sistemas de Informação na Escola de Artes e Humanidades da USP e pesquisador do Grupo de Políticas Públicas de Acesso à Informação. Sua tese de doutorado sobre revisão de crenças e lógicas de descrição, defendida em 2010, ganhou o prêmio de melhor tese do ano pela Sociedade Brasileira de Computação. Atualmente seus campos de estudo incluem privacidade, vigilância e a polarização do debate política nas redes sociais.'
 			},
 			{
-				"nome": "Jorge Vieira",
-				"foto": "img/p_jorge_vieira.png",
-				"descricao": "Jorge Vieira é um programador e entusiasta de agile que acabou se apaixonando por empreendedorismo. Bacharel em Ciência da Computação pela Universidade São Judas Tadeu, possui mais de seis anos de experiência em desenvolvimento de software, dos quais três são dedicados ao Desenvolvimento de Games. É Cofundador da Etheral Flame Studios, empresa paulistana que desenvolveu o game Spaceship Overdrive, o qual foi premiado como “Melhor jogo para portáteis/mobile da Brasil Game Show 2015” pela Brazil Game Awards e foi semifinalista no BIG Festival 2016."
+				'nome': 'Jorge Vieira',
+				'foto': 'img/p_jorge_vieira.png',
+				'descricao': 'Jorge Vieira é um programador e entusiasta de agile que acabou se apaixonando por empreendedorismo. Bacharel em Ciência da Computação pela Universidade São Judas Tadeu, possui mais de seis anos de experiência em desenvolvimento de software, dos quais três são dedicados ao Desenvolvimento de Games. É Cofundador da Etheral Flame Studios, empresa paulistana que desenvolveu o game Spaceship Overdrive, o qual foi premiado como “Melhor jogo para portáteis/mobile da Brasil Game Show 2015” pela Brazil Game Awards e foi semifinalista no BIG Festival 2016.'
 			},
 			{
-				"nome": "Jéssica Tauane",
-				"foto": "img/p_jessica.png",
-				"descricao": "Jessica é comunicóloga com ênfase em novas mídias pela PUC-SP e Youtuber dos canais \"Canal das Bee\" e \"Gorda de Boa\", canais focados em ativismo LGBT, empoderamento feminino e humor."
+				'nome': 'Jéssica Tauane',
+				'foto': 'img/p_jessica.png',
+				'descricao': 'Jessica é comunicóloga com ênfase em novas mídias pela PUC-SP e Youtuber dos canais \'Canal das Bee\' e \'Gorda de Boa\', canais focados em ativismo LGBT, empoderamento feminino e humor.'
 			},
 			{
-				"nome": "Erick Varzot",
-				"foto": "img/p_erick_varzot.png",
-				"descricao": "Erick Varzot é desenvolvedor de Games e Dungeon Master. Bacharel em Ciência da Computação na Universidade São Judas Tadeu, atua profissionalmente em TI desde 2012 e passou a trabalhar com Pesquisa e Desenvolvimento de Games desde 2013. É Cofundador da Etheral Flame Studios, empresa paulistana que desenvolveu o game Spaceship Overdrive, o qual foi premiado como “Melhor jogo para portáteis/mobile da Brasil Game Show 2015” pela Brazil Game Awards e foi semifinalista no BIG Festival 2016."
+				'nome': 'Erick Varzot',
+				'foto': 'img/p_erick_varzot.png',
+				'descricao': 'Erick Varzot é desenvolvedor de Games e Dungeon Master. Bacharel em Ciência da Computação na Universidade São Judas Tadeu, atua profissionalmente em TI desde 2012 e passou a trabalhar com Pesquisa e Desenvolvimento de Games desde 2013. É Cofundador da Etheral Flame Studios, empresa paulistana que desenvolveu o game Spaceship Overdrive, o qual foi premiado como “Melhor jogo para portáteis/mobile da Brasil Game Show 2015” pela Brazil Game Awards e foi semifinalista no BIG Festival 2016.'
 			},
 			{
 				'nome': 'Luis Leão',
@@ -43,7 +43,7 @@ angular.module('ssi', [])
 			{
 				'nome': 'Bruno Cicanci',
 				'foto': 'img/p_bruno_cicanci.png',
-				'descricao': 'Bruno Cicanci é um programador com mais de 11 anos de experiência e trabalha há 6 anos com desenvolvimento de jogos mobile. Formado em Ciência da Computação e pós-graduado em Produção e Programação de Jogos, já trabalhou em grandes empresas de games como Glu Mobile e Electronic Arts. Há 7 anos escreve sobre desenvolvimento de jogos no seu blog, gamedeveloper.com.br.'
+				'descricao': 'Bruno Cicanci é um programador com mais de 11 anos de experiência e trabalha há 6 anos com desenvolvimento de jogos mobile. Formado em Ciência da Computação e pós-graduado em Produção e Programação de Jogos, já trabalhou em grandes empresas de games como Glu Mobile e Electronic Arts. Há 7 anos escreve sobre desenvolvimento de jogos no seu blog, <a href="http://gamedeveloper.com.br">gamedeveloper.com.br</a>.'
 			},
 			{
 				'nome': 'Ailton Santos',
@@ -73,7 +73,7 @@ angular.module('ssi', [])
 			{
 				'nome': 'Paulo Kretcheu',
 				'foto': 'img/p_paulo_roberto.png',
-				'descricao': 'Paulo Roberto Alves de Oliveira, mais conhecido pelo apelido Kretcheu, é membro tradicional da comunidade de Software Livre e defensor do conhecimento livre e acessível a todos, possuindo diversas certificações como LPI-C, UCP, Novell NCLA e DCTS. Administrador de redes a mais de 15 anos e professor universitário há 25, é formado em Engenharia Mecânica e pós-graduado em auditoria e segurança. Além disso é o idealizador e apresentador do Vídeo Blog: Kretcheu.com.br desde 2009.'
+				'descricao': 'Paulo Roberto Alves de Oliveira, mais conhecido pelo apelido Kretcheu, é membro tradicional da comunidade de Software Livre e defensor do conhecimento livre e acessível a todos, possuindo diversas certificações como LPI-C, UCP, Novell NCLA e DCTS. Administrador de redes a mais de 15 anos e professor universitário há 25, é formado em Engenharia Mecânica e pós-graduado em auditoria e segurança. Além disso é o idealizador e apresentador do Vídeo Blog: <a href="http://Kretcheu.com.br">Kretcheu.com.br</a> desde 2009.'
 			},
 			{
 				'nome': 'Gustavo Silva',
@@ -84,6 +84,11 @@ angular.module('ssi', [])
 				'nome': 'Fernando Rychlewski',
 				'foto': 'img/p_fernando_rychlewski.png',
 				'descricao':'Fernando Rychlewski atua há mais de 16 anos como desenvolvedor curioso, um Nerd como ele mesmo diz e tem mais de 8 anos de experiência em Análise e Gerência de Projetos de Sistemas em arquiteturas Web/Cloud. Os 12 anos de experiência com design gráfico fizeram com que se tornasse CEO de uma gráfica, seu Hobbie. Hoje atua na elaboração de evoluções tecnológicas e arquiteturas em sistemas de grandes corporações no mercado, além disso é organizador e palestrante de eventos para a comunidade de desenvolvedores brasileiros (Google Developers São Paulo, NetCoders, iMasters, etc).'
+			},
+			{
+				'nome': 'Renato Stefani',
+				'foto': '',
+				'descricao': 'Renato Stefani é Engenheiro Mecatrônico, especialista em futurismo e tecnologias exponenciais pela Singularity University. Um ser humano na busca infinita do equilíbrio entre mente, corpo e alma, Renato convida as pessoas a se entenderem a fundo, tornando-se hackers da própria vida. Além disso, é fundador do hacklife.co'
 			}
 		];
 	})
@@ -91,75 +96,75 @@ angular.module('ssi', [])
 		$scope.organizadores =
 		[
 			{
-				"nome": "Comissão Organizadora",
-				"logo": "imgr/logo_comissao.png",
-				"url": "https://www.facebook.com/SSIUSP"
+				'nome': 'Comissão Organizadora',
+				'logo': 'imgr/logo_comissao.png',
+				'url': 'https://www.facebook.com/SSIUSP'
 			},
 			{
-				"nome": "DASI",
-				"logo": "imgr/logo_dasi.jpg",
-				"url": "http://dasiusp.com"
+				'nome': 'DASI',
+				'logo': 'imgr/logo_dasi.jpg',
+				'url': 'http://dasiusp.com'
 			}
 		];
 		$scope.empresas =
 		[
 			{
-				"nome": "BTC",
-				"logo": "imgr/logo_btc.png",
-				"url": "http://www.btcompany.com.br"
+				'nome': 'BTC',
+				'logo': 'imgr/logo_btc.png',
+				'url': 'http://www.btcompany.com.br'
 			},
 			{
-				"nome": "Conquest",
-				"logo": "imgr/logo_conquest.png",
-				"url": "http://www.conquest.com.br"
+				'nome': 'Conquest',
+				'logo': 'imgr/logo_conquest.png',
+				'url': 'http://www.conquest.com.br'
 			},
 			{
-				"nome": "Iteris",
-				"logo": "imgr/logo_iteris.png",
-				"url": "http://www.iteris.com.br"
+				'nome': 'Iteris',
+				'logo': 'imgr/logo_iteris.png',
+				'url': 'http://www.iteris.com.br'
 			},
 			{
-				"nome": "LexisNexis",
-				"logo": "imgr/logo_lexisNexis.png",
-				"url": "http://www.lexisnexis.com"
+				'nome': 'LexisNexis',
+				'logo': 'imgr/logo_lexisNexis.png',
+				'url': 'http://www.lexisnexis.com'
 			},
 			{
-				"nome": "SAS",
-				"logo": "imgr/logo_sas.png",
-				"url": "http://www.sas.com/pt_br/home.html"
+				'nome': 'SAS',
+				'logo': 'imgr/logo_sas.png',
+				'url': 'http://www.sas.com/pt_br/home.html'
 			},
 			{
-				"nome": "Caelum",
-				"logo": "imgr/logo_caelum.png",
-				"url": "http://www.caelum.com.br"
+				'nome': 'Caelum',
+				'logo': 'imgr/logo_caelum.png',
+				'url': 'http://www.caelum.com.br'
 			}
 		];
 		$scope.apoiadores =
 		[
 			{
-				"nome": "Casa do Código",
-				"logo": "imgr/logo_casa_do_codigo.png",
-				"url": "https://www.casadocodigo.com.br/"
+				'nome': 'Casa do Código',
+				'logo': 'imgr/logo_casa_do_codigo.png',
+				'url': 'https://www.casadocodigo.com.br/'
 			},
 			{
-				"nome": "Mãe Terra",
-				"logo": "imgr/logo_mae_terra.png",
-				"url": "http://www.maeterra.com.br"
+				'nome': 'Mãe Terra',
+				'logo': 'imgr/logo_mae_terra.png',
+				'url': 'http://www.maeterra.com.br'
 			},
 			{
-				"nome": "PRCEU",
-				"logo": "imgr/logo_prceu.png",
-				"url": "http://prceu.usp.br"
+				'nome': 'PRCEU',
+				'logo': 'imgr/logo_prceu.png',
+				'url': 'http://prceu.usp.br'
 			},
 			{
-				"nome": "EACH",
-				"logo": "imgr/logo_each.jpg",
-				"url": "http://www5.each.usp.br"
+				'nome': 'EACH',
+				'logo': 'imgr/logo_each.jpg',
+				'url': 'http://www5.each.usp.br'
 			},
 			{
-				"nome": "USP",
-				"logo": "imgr/logo_usp.png",
-				"url": "http://www5.usp.br"
+				'nome': 'USP',
+				'logo': 'imgr/logo_usp.png',
+				'url': 'http://www5.usp.br'
 			}
 		];
 	})
@@ -197,103 +202,103 @@ angular.module('ssi', [])
 var palestras =
 [
 	{
-	"horario": {
-	  "fim": "6:28",
-	  "inicio": "3:18"
+	'horario': {
+	  'fim': '6:28',
+	  'inicio': '3:18'
 	},
-	"tema": "Tecnologia",
-	"local": "Auditório Verde",
-	"palestrante": "Terri Morrow",
-	"titulo": "aute laborum proident"
-	},
-	{
-	"horario": {
-	  "fim": "5:51",
-	  "inicio": "3:13"
-	},
-	"tema": "Jogos",
-	"local": "Auditório Verde",
-	"palestrante": "Todd Lambert",
-	"titulo": "mollit et labore"
+	'tema': 'Tecnologia',
+	'local': 'Auditório Verde',
+	'palestrante': 'Terri Morrow',
+	'titulo': 'aute laborum proident'
 	},
 	{
-	"horario": {
-	  "fim": "11:1",
-	  "inicio": "8:33"
+	'horario': {
+	  'fim': '5:51',
+	  'inicio': '3:13'
 	},
-	"tema": "Tecnologia",
-	"local": "Auditório Vermelho",
-	"palestrante": "Wade Clements",
-	"titulo": "fugiat commodo excepteur"
-	},
-	{
-	"horario": {
-	  "fim": "9:25",
-	  "inicio": "7:4"
-	},
-	"tema": "Empreendedorismo",
-	"local": "Auditório Verde",
-	"palestrante": "Thomas Dillon",
-	"titulo": "proident sunt culpa"
+	'tema': 'Jogos',
+	'local': 'Auditório Verde',
+	'palestrante': 'Todd Lambert',
+	'titulo': 'mollit et labore'
 	},
 	{
-	"horario": {
-	  "fim": "4:19",
-	  "inicio": "7:1"
+	'horario': {
+	  'fim': '11:1',
+	  'inicio': '8:33'
 	},
-	"tema": "Tecnologia",
-	"local": "Auditório Azul",
-	"palestrante": "Wood May",
-	"titulo": "mollit Lorem ex"
-	},
-	{
-	"horario": {
-	  "fim": "3:5",
-	  "inicio": "7:37"
-	},
-	"tema": "Tecnologia",
-	"local": "Auditório Azul",
-	"palestrante": "Silvia Flynn",
-	"titulo": "magna cillum aliquip"
+	'tema': 'Tecnologia',
+	'local': 'Auditório Vermelho',
+	'palestrante': 'Wade Clements',
+	'titulo': 'fugiat commodo excepteur'
 	},
 	{
-	"horario": {
-	  "fim": "5:33",
-	  "inicio": "3:39"
+	'horario': {
+	  'fim': '9:25',
+	  'inicio': '7:4'
 	},
-	"tema": "Empreendedorismo",
-	"local": "Auditório Vermelho",
-	"palestrante": "Sullivan Clay",
-	"titulo": "nisi pariatur ex"
-	},
-	{
-	"horario": {
-	  "fim": "5:39",
-	  "inicio": "3:33"
-	},
-	"tema": "Tecnologia",
-	"local": "Auditório Vermelho",
-	"palestrante": "Roberta Browning",
-	"titulo": "id duis pariatur"
+	'tema': 'Empreendedorismo',
+	'local': 'Auditório Verde',
+	'palestrante': 'Thomas Dillon',
+	'titulo': 'proident sunt culpa'
 	},
 	{
-	"horario": {
-	  "fim": "11:42",
-	  "inicio": "4:38"
+	'horario': {
+	  'fim': '4:19',
+	  'inicio': '7:1'
 	},
-	"tema": "Empreendedorismo",
-	"local": "Auditório Azul",
-	"palestrante": "Georgette Davenport",
-	"titulo": "deserunt sit qui"
+	'tema': 'Tecnologia',
+	'local': 'Auditório Azul',
+	'palestrante': 'Wood May',
+	'titulo': 'mollit Lorem ex'
 	},
 	{
-	"horario": {
-	  "fim": "6:5",
-	  "inicio": "9:37"
+	'horario': {
+	  'fim': '3:5',
+	  'inicio': '7:37'
 	},
-	"tema": "Empreendedorismo",
-	"local": "Auditório Vermelho",
-	"palestrante": "Diann Hughes",
-	"titulo": "laborum fugiat minim"
+	'tema': 'Tecnologia',
+	'local': 'Auditório Azul',
+	'palestrante': 'Silvia Flynn',
+	'titulo': 'magna cillum aliquip'
+	},
+	{
+	'horario': {
+	  'fim': '5:33',
+	  'inicio': '3:39'
+	},
+	'tema': 'Empreendedorismo',
+	'local': 'Auditório Vermelho',
+	'palestrante': 'Sullivan Clay',
+	'titulo': 'nisi pariatur ex'
+	},
+	{
+	'horario': {
+	  'fim': '5:39',
+	  'inicio': '3:33'
+	},
+	'tema': 'Tecnologia',
+	'local': 'Auditório Vermelho',
+	'palestrante': 'Roberta Browning',
+	'titulo': 'id duis pariatur'
+	},
+	{
+	'horario': {
+	  'fim': '11:42',
+	  'inicio': '4:38'
+	},
+	'tema': 'Empreendedorismo',
+	'local': 'Auditório Azul',
+	'palestrante': 'Georgette Davenport',
+	'titulo': 'deserunt sit qui'
+	},
+	{
+	'horario': {
+	  'fim': '6:5',
+	  'inicio': '9:37'
+	},
+	'tema': 'Empreendedorismo',
+	'local': 'Auditório Vermelho',
+	'palestrante': 'Diann Hughes',
+	'titulo': 'laborum fugiat minim'
 	}
 	];
