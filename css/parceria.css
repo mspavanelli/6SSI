@@ -1,0 +1,17 @@
+.marcas {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.marcas figure {
+	/*border: 1px solid;*/
+	margin: 30px 50px;
+}
+
+.marcas img {
+    height: auto;
+    max-height: 85px;
+    width: auto;
+}

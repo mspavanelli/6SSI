@@ -42,4 +42,6 @@ jspm_packages
 
 .publish
 dist
-img originais
+assets
+imgr
+demo.html

@@ -1,0 +1,38 @@
+@font-face {
+	font-family: Geometric Book;
+	src: url(fontes/Geometric_Book.otf);
+}
+
+@font-face {
+	font-family: Geometric;
+	src: url(fontes/Geometric_Regular.otf);
+}
+
+@font-face {
+	font-family: Geometric;
+	src: url(fontes/Geometric_DemiBold.otf);
+	font-weight: bolder;
+}
+
+@font-face {
+	font-family: Geometric;
+	src: url(fontes/Geometric_Light.otf);
+	font-weight: lighter;
+}
+
+* {
+	font-family: Geometric;
+	font-weight: 600;
+}
+
+h2 {
+	margin-bottom: 40px;
+}
+
+p {
+	font-size: medium;
+}
+
+.panel p {
+	font-size: 16px;
+}

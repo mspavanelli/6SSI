@@ -21,7 +21,7 @@ angular.module('ssi', [])
 				"descricao": "Jorge Vieira é um programador e entusiasta de agile que acabou se apaixonando por empreendedorismo. Bacharel em Ciência da Computação pela Universidade São Judas Tadeu, possui mais de seis anos de experiência em desenvolvimento de software, dos quais três são dedicados ao Desenvolvimento de Games. É Cofundador da Etheral Flame Studios, empresa paulistana que desenvolveu o game Spaceship Overdrive, o qual foi premiado como “Melhor jogo para portáteis/mobile da Brasil Game Show 2015” pela Brazil Game Awards e foi semifinalista no BIG Festival 2016."
 			},
 			{
-				"nome": "Jéssica",
+				"nome": "Jéssica Tauane",
 				"foto": "img/p_jessica.png",
 				"descricao": "Jessica é comunicóloga com ênfase em novas mídias pela PUC-SP e Youtuber dos canais \"Canal das Bee\" e \"Gorda de Boa\", canais focados em ativismo LGBT, empoderamento feminino e humor."
 			},
@@ -92,12 +92,12 @@ angular.module('ssi', [])
 		[
 			{
 				"nome": "Comissão Organizadora",
-				"logo": "img/logo_comissao.png",
+				"logo": "imgr/logo_comissao.png",
 				"url": "https://www.facebook.com/SSIUSP"
 			},
 			{
 				"nome": "DASI",
-				"logo": "img/logo_dasi.jpg",
+				"logo": "imgr/logo_dasi.jpg",
 				"url": "http://dasiusp.com"
 			}
 		];
@@ -105,32 +105,32 @@ angular.module('ssi', [])
 		[
 			{
 				"nome": "BTC",
-				"logo": "img/logo_btc.png",
+				"logo": "imgr/logo_btc.png",
 				"url": "http://www.btcompany.com.br"
 			},
 			{
 				"nome": "Conquest",
-				"logo": "img/logo_conquest.png",
+				"logo": "imgr/logo_conquest.png",
 				"url": "http://www.conquest.com.br"
 			},
 			{
 				"nome": "Iteris",
-				"logo": "img/logo_iteris.png",
+				"logo": "imgr/logo_iteris.png",
 				"url": "http://www.iteris.com.br"
 			},
 			{
 				"nome": "LexisNexis",
-				"logo": "img/logo_lexisNexis.png",
+				"logo": "imgr/logo_lexisNexis.png",
 				"url": "http://www.lexisnexis.com"
 			},
 			{
 				"nome": "SAS",
-				"logo": "img/logo_sas.png",
+				"logo": "imgr/logo_sas.png",
 				"url": "http://www.sas.com/pt_br/home.html"
 			},
 			{
 				"nome": "Caelum",
-				"logo": "http://placehold.it/350x150/?text=Caelum",
+				"logo": "imgr/logo_caelum.png",
 				"url": "http://www.caelum.com.br"
 			}
 		];
@@ -138,28 +138,58 @@ angular.module('ssi', [])
 		[
 			{
 				"nome": "Casa do Código",
-				"logo": "img/logo_casa_do_codigo.png",
+				"logo": "imgr/logo_casa_do_codigo.png",
 				"url": "https://www.casadocodigo.com.br/"
 			},
 			{
 				"nome": "Mãe Terra",
-				"logo": "img/logo_mae_terra.png",
+				"logo": "imgr/logo_mae_terra.png",
 				"url": "http://www.maeterra.com.br"
 			},
 			{
 				"nome": "PRCEU",
-				"logo": "img/logo_prceu.png",
+				"logo": "imgr/logo_prceu.png",
 				"url": "http://prceu.usp.br"
 			},
 			{
 				"nome": "EACH",
-				"logo": "img/logo_each.jpg",
+				"logo": "imgr/logo_each.jpg",
 				"url": "http://www5.each.usp.br"
 			},
 			{
 				"nome": "USP",
-				"logo": "img/logo_usp.png",
+				"logo": "imgr/logo_usp.png",
 				"url": "http://www5.usp.br"
+			}
+		];
+	})
+	.controller('rodapeCtrl', function($scope) {
+		$scope.sites =
+		[
+			{
+				'edicao': 'V Semana',
+				'ano': '2015',
+				'url': 'http://www.each.usp.br/semanasi/2015/'
+			},
+			{
+				'edicao': 'IV Semana',
+				'ano': '2013',
+				'url': 'http://www.each.usp.br/semanasi/2013/index.php'
+			},
+			{
+				'edicao': 'III Semana',
+				'ano': '2012',
+				'url': 'http://www.each.usp.br/semanasi/2012/'
+			},
+			{
+				'edicao': 'II Semana',
+				'ano': '2011',
+				'url': 'http://www.each.usp.br/semanasi/2010/'
+			},
+			{
+				'edicao': 'I Semana',
+				'ano': '2009',
+				'url': 'http://www.each.usp.br/semanasi/2009/'
 			}
 		];
 	});
