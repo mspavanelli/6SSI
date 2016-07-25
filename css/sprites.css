@@ -1,44 +1,16 @@
-.marcaX {
-	background-image: url(../imgr/logos.png);
-	background-repeat: no-repeat;
-	width: 200px;
-}
-
-.marca1 {
-	background-position-y: 0px;
-	height: 119px;
-}
-
-.marca2 {
-	background-position-y: -119px;
-	height: 63px;
-}
-
-.marca3 {
-	background-position-y: -182px;
-	height: 63px;
-}
-
-.marca4 {
-	background-position-y: -250px;
-	height: 85px;
-}
-
-.marca5 {
-	background-position-y: -335px;
-	height: 63px;
-}
-
-.marca6 {
-	background-position-y: -335px;
-	height: 63px;
-}
-
 .convidado {
-	background-image: url(../imgr/palestrantes.png);
+	background-image: url(../img/palestrantes.png);
 	background-repeat: no-repeat;
+	position: relative;
 	width: 300px;
 	height: 300px;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .convidado1 {background-position-y: 0;}
@@ -58,3 +30,4 @@
 .convidado15 {background-position-y: -4200px;}
 .convidado16 {background-position-y: -4500px;}
 .convidado17 {background-position-y: -4800px;}
+.convidado18 {background-position-y: -5100px;}

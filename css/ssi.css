@@ -19,13 +19,8 @@ section h2, section h3 {
 	padding-bottom: 20px;
 }
 
-.conteudo {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	overflow-x: scroll;
-	padding-left: 20px;
-	padding-right: 20px;
+.conteudo figure {
+	max-width: 100vw;
 }
 
 .conteudo span {
@@ -60,6 +55,10 @@ table, table th {
 	max-height: 300px
 }
 
+.slick-prev {
+    left: -50px;
+}
+
 .slick-prev:before {
 	margin-right: -50px;
 }
@@ -68,8 +67,8 @@ table, table th {
 	margin-left: -50px;
 }
 .slick-prev:before, .slick-next:before {
-	color: #391954;
-	font-size: 20px;
+	color: #391954 !important;
+	font-size: 20px !important;
 }
 
 .painel {
@@ -85,6 +84,7 @@ table, table th {
 .nav.nav-pills {
 	display: flex;
 	justify-content: center;
+	flex-flow: wrap;
 }
 
 .nav-pills>li>a {

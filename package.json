@@ -12,9 +12,13 @@
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-replace": "^1.0.5",
     "gulp-gh-pages": "^0.5.4",
+    "gulp-html-replace": "^1.6.1",
     "gulp-htmlmin": "^2.0.0",
     "gulp-if": "^2.0.1",
+    "gulp-uglify": "^1.5.4",
     "gulp-useref": "^3.1.0",
     "imagemin": "^5.2.2"
   },
