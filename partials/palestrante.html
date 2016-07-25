@@ -1,12 +1,14 @@
 <div class="palestrante row">
 	<div class="container">
 		<div class="col-xs-12 col-md-6">
-			<img class="img-responsive center-block palestrante" ng-src="{{foto}}" alt="">
+			<div class="sprite">
+				<div class="img-responsive center-block convidado" ng-class="foto"></div>
+			</div>
 		</div>
 		<div class="col-xs-12 col-md-6">
 			<div class="painel">
 				<h3>{{nome}}</h3>
-				<div class="text-justify descricao">{{descricao}}</div>
+				<div  class="text-justify descricao" ng-bind-html="descricao"></div>
 			</div>
 		</div>
 	</div>

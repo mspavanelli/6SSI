@@ -4,35 +4,18 @@
 	<title>6ª Semana de Sistemas de Informação</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
-	
 	<link rel="shortcut icon" href="img/icone.ico"></link>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="node_modules/bootflat/bootflat/css/bootflat.min.css">
-	<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
-	<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
-	<link rel="stylesheet" href="css/ssi.css">
-	<link rel="stylesheet" href="css/sprites.css">
 
-	<link rel="stylesheet" href="css/sprites.css">
-
-	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
 	
 	<script src="https://use.fontawesome.com/9b2c76607c.js"></script>
 
-
-<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootflat.min.css">
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/slick-theme.css">
-	<link rel="stylesheet" href="css/ssi.css">
 </head>
 
 <body ng-app="ssi">
 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
@@ -47,8 +30,8 @@
 					<li><a href="#" id="sobre">Sobre</a></li>
 					<li><a href="#palestrantes" id="palestrantes">Convidados</a></li>
 					<li><a href="#programacao" id="programacao">Programação</a></li>
-					<li><a href="#incricao" id="inscricao">Inscrição</a></li>
 					<li><a href="#localizacao" id="localizacao">Localização</a></li>
+					<li><a href="#incricao" id="inscricao">Inscrição</a></li>
 				</ul>
 			</div>
 		</div>
@@ -78,29 +61,31 @@
 		<section programacao></section>
 		<hr>
 
-		<section inscricao></section>
+		<section localizacao></section>
 		<hr>
 
-		<section localizacao></section>
+		<section inscricao></section>
 		<hr>
 
 		<section parcerias></section>
 	</main>
 
-	<footer class="footer">
+	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-6">
+				<div id="edicoes" ng-controller="rodapeCtrl">
 					<h5>Edições anteriores</h5>
-					<ul>
-						<li><a target="_blank" href="http://www.each.usp.br/semanasi/2015/">V Semana - 2015</li>
-						<li><a target="_blank" href="http://www.each.usp.br/semanasi/2013/index.php">IV Semana - 2013</li>
-						<li><a target="_blank" href="http://www.each.usp.br/semanasi/2012/">III Semana - 2012</li>
-						<li><a target="_blank" href="http://www.each.usp.br/semanasi/2010/">II Semana - 2010</li>
-						<li><a target="_blank" href="http://www.each.usp.br/semanasi/2009/">I Semana - 2009</li>
+					<ul class="sites">
+						<li ng-repeat="site in sites">
+							<a target="_blank" href="{{site.url}}">
+								<span>{{site.edicao}}</span>
+								<span>-</span>
+								<span>{{site.ano}}</span>
+							</a>
+						</li>
 					</ul>
 				</div>
-				<div class="col-xs-12 col-md-6 text-right">
+				<div id="contato">
 					<h5>Contato</h5>
 					<i class="fa fa-facebook-official" aria-hidden="true"></i> <a href="http://www.fb.com/SSIUSP" target="_blank">fb.com/SSIUSP</a>
 					<br>
@@ -113,21 +98,12 @@
 		</div>
 	</footer>
 	
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="node_modules/angular/angular.min.js"></script>
-	<script src="node_modules/slick-carousel/slick/slick.min.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/diretivas.js"></script>
-    <script src="js/script.js"></script>
-
-  <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/angular.min.js"></script>
+	<script src="js/angular-sanitize.min.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/diretivas.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/all.min.js"></script>
 
 </body>
 </html>
