@@ -519,20 +519,12 @@ header .row {
     max-height: 85px;
     width: auto;
 }
-.sprite {
-	/*border: 1px solid;*/
-	width: 300px;
-	height: 300px;
-	/*position: relative;*/
-
-}
-
 .convidado {
 	background-image: url(../img/palestrantes.png);
 	background-repeat: no-repeat;
-	width: auto;
-	height: auto;
 	position: relative;
+	width: 300px;
+	height: 300px;
 }
 
 .content {
