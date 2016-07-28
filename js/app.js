@@ -75,17 +75,105 @@ angular.module('ssi', ['ngSanitize'])
 		$scope.palestras17 =
 		[
 			{
-				'horario': '',
-				'titulo': '',
-				'palestrante': ''
+				'horario': '9h',
+				'titulo': 'Coffe Break'
+			},
+			{
+				'horario': '9h30',
+				'titulo': 'Oportunidades EACH'
+			},
+			{
+				'horario': '10h',
+				'titulo': 'Game Jams - Como fazer um jogo em 48h',
+				'palestrante': 'Bruno Cicanci'
+			},
+			{
+				'horario': '11h',
+				'titulo': 'Enterprise Architecture in Process Management (Inglês)',
+				'palestrante': 'Rosario Villalta - UPC'
+			},
+			{
+				'horario': '12h',
+				'titulo': 'Intervalo'
+			},
+			{
+				'horario': '14h30',
+				'titulo': 'Aperfeiçoando o voto eletrônico no Brasil',
+				'palestrante': 'Diego Aranha'
+			},
+			{
+				'horario': '15h30',
+				'titulo': 'Desenvolvimento de games – Não entre em pânico! A vida, o universo etudo mais',
+				'palestrante': 'Etheral Flame'
+			},
+			{
+				'horario': '16h30',
+				'titulo': 'Coffee Break'
+			},
+			{
+				'horario': '18h',
+				'titulo': 'Marketing para Empreendedores',
+				'palestrante': 'Eduardo Bonini - BTC'
+			},
+			{
+				'horario': '19h',
+				'titulo': 'Meet IBM Watson',
+				'palestrante': 'Cássia Sanctos e Thiago Araújo'
+			},
+			{
+				'horario': '21h',
+				'titulo': 'A Evolução da Realidade Virtual e Como Começar',
+				'palestrante': 'Fernando Rychlewski'
 			}
-		];
+		];		
 		$scope.palestras18 =
 		[
 			{
-				'horario': '',
-				'titulo': '',
-				'palestrante': ''
+				'horario': '9h',
+				'titulo': 'Coffe Break'
+			},
+			{
+				'horario': '9h30',
+				'titulo': 'Oportunidades EACH'
+			},
+			{
+				'horario': '10h30',
+				'titulo': 'Uma visão geral sobre técnicas de Machine Learning',
+				'palestrante': 'Pedro Shiguihara - UPC'
+			},
+			{
+				'horario': '11h30',
+				'titulo': 'Intervalo'
+			},
+			{
+				'horario': '16h',
+				'titulo': 'Coffe Break',
+				'destaque': 'warning'
+			},
+			{
+				'horario': '16h30',
+				'titulo': 'SAS e as tendências de mercado analítico',
+				'palestrante': 'Adriana Silva - SAS'
+			},
+			{
+				'horario': '17h30',
+				'titulo': 'Painel: “A Revolução das Mulheres”',
+				'palestrante': 'Iana Chan, Lúcia Freitas e Fernanda Bernardo'
+			},
+			{
+				'horario': '19h',
+				'titulo': 'Hacklife – Como hackear sua vida',
+				'palestrante': 'Renato Stefani'
+			},
+			{
+				'horario': '20h',
+				'titulo': 'Big Data advances using LexisNexis Risk Solutions HPCC Systems',
+				'palestrante': 'Brian Hirsch, Claudio Amaral e Caio Dias - Lexis Nexis'
+			},
+			{
+				'horario': '21h',
+				'titulo': 'YouTube e ativismo LGBT: como a comunicação pode salvar vidas',
+				'palestrante': 'Jessica Tauane'
 			}
 		];
 		$scope.palestras19 =
