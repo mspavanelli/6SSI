@@ -3,12 +3,12 @@
 	<div class="container">
 		<h2>Programação</h2>
 
-		<ul class="nav nav-pills">
-			<li role="presentation" class="active"><a href="">15/08 (segunda-feira)</a></li>
-			<li role="presentation"><a href="">16/08 (terça-feira)</a></li>
-			<li role="presentation"><a href="">17/08 (quarta-feira)</a></li>
-			<li role="presentation"><a href="">18/08 (quinta-feira)</a></li>
-			<li role="presentation"><a href="">19/08 (sexta-feira)</a></li>
+		<ul class="nav nav-pills" ng-init="dia = 15">
+			<li role="presentation" class="active"><a ng-click="dia = 15" href="">15/08 (segunda-feira)</a></li>
+			<li role="presentation"><a ng-click="dia = 16" href="">16/08 (terça-feira)</a></li>
+			<li role="presentation"><a ng-click="dia = 17" href="">17/08 (quarta-feira)</a></li>
+			<li role="presentation"><a ng-click="dia = 18" href="">18/08 (quinta-feira)</a></li>
+			<li role="presentation"><a ng-click="dia = 19" href="">19/08 (sexta-feira)</a></li>
 		</ul>
 
 		<hr>
@@ -16,19 +16,16 @@
 		<table class="table table-striped table-hover">
 			<thead>
 			<tr>
-				<th colspan="2">Horário</th>
-				<th>Palestrante</th>
+				<th>Horário</th>
 				<th>Palestra</th>
-				<th>Local</th>
+				<th>Palestrante</th>
 			</tr>
 			</thead>
 			<tbody>
-			<tr ng-repeat="palestra in palestras">
-				<td>{{palestra.horario.inicio}}</td>
-				<td>{{palestra.horario.fim}}</td>
-				<td>{{palestra.palestrante}}</td>
+			<tr ng-repeat="palestra in palestras(dia)" ng-class="palestra.destaque">
+				<td>{{palestra.horario}}</td>
 				<td>{{palestra.titulo}}</td>
-				<td>{{paletra.local}}</td>
+				<td>{{palestra.palestrante}}</td>
 			</tr>
 			</tbody>
 		</table>

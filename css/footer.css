@@ -3,7 +3,7 @@ footer {
 	// background-image: url(../img/footer.png);
 	margin-top: 15px;
 	color: white;
-	padding: 15px;
+	padding-top: 40px;
 }
 
 footer p {
@@ -22,31 +22,15 @@ footer a {
 	color: white;
 }
 
-footer a:hover {
-	text-decoration: underline;
+.footer-logo, .footer-nav {
+	min-width: 25%;
+	text-align: center;
 }
 
-footer p {
-	margin-top: 5px;
+.footer-logo {
+	margin-bottom: 40px
 }
 
-footer ul {
-	list-style-type: none;
-	padding: 0;
-	max-width: 155px;
-}
-
-ul.sites li {
-	display: flex;
-	justify-content: space-between;
-}
-
-footer .row {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-footer .row > div {
-	/*width: auto;*/
+.footer-nav {
+	float: right;
 }

@@ -16,5 +16,5 @@ $(document).ready(function(){
 		autoplaySpeed: 10000,
 	});
 	
-	['sobre', 'palestrantes', 'programacao', 'inscricao', 'localizacao'].forEach(scroll);
+	['sobre', 'palestrantes', 'programacao', 'inscricao', 'hackathon', 'localizacao'].forEach(scroll);
 });
