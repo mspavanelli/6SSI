@@ -3,7 +3,7 @@
 <head>
 	<title>6ª Semana de Sistemas de Informação</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height" />
 	<link rel="shortcut icon" href="img/icone.ico"></link>
 
 	<link rel="stylesheet" href="css/styles.min.css">
@@ -30,6 +30,7 @@
 					<li><a href="#" id="sobre">Sobre</a></li>
 					<li><a href="#palestrantes" id="palestrantes">Convidados</a></li>
 					<li><a href="#programacao" id="programacao">Programação</a></li>
+					<li><a href="#hackathon" id="hackathon">Hack Lab</a></li>
 					<li><a href="#localizacao" id="localizacao">Localização</a></li>
 					<li><a href="#incricao" id="inscricao">Inscrição</a></li>
 				</ul>
@@ -61,6 +62,18 @@
 		<section programacao></section>
 		<hr>
 
+		<section class="hackathon container">
+			<h2>EACH Hack Lab</h2>
+			<p>Este ano, a SSI contará com uma super novidade:</p>
+			<h4>O EACH Hack Lab, o primeiro Hackathon da EACH!</h3>
+			<img src="img/hack_lab.png" class="img-responsive center-block img-thumbnail" alt=""><br>
+			<p>Hackathon é uma maratona de programação, onde os competidores aplicam todo seu conhecimento a fim de solucionar um problema ou propor uma ideia, de acordo com o tema.</p>
+			<p>O EACH Hack Lab irá finalizar as atividades da SSI e acontecerá entre sexta-feira (19) e sábado (20). Serão 30 horas de desafios, trabalho duro e aprendizado recompensados com prêmios no final!</p>
+			<p>Fique ligado no nosso evento pra saber de todas as informações!</p>
+			<p>Link do evento: <a href="https://goo.gl/hWBR1y" target="_blank">EACH Hack Lab</a></p>
+		</section>
+		<hr>
+
 		<section localizacao></section>
 		<hr>
 
@@ -72,29 +85,28 @@
 
 	<footer>
 		<div class="container">
-			<div class="row">
-				<div id="edicoes" ng-controller="rodapeCtrl">
-					<h5>Edições anteriores</h5>
-					<ul class="sites">
-						<li ng-repeat="site in sites">
-							<a target="_blank" href="{{site.url}}">
-								<span>{{site.edicao}}</span>
-								<span>-</span>
-								<span>{{site.ano}}</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div id="contato">
-					<h5>Contato</h5>
-					<i class="fa fa-facebook-official" aria-hidden="true"></i> <a href="http://www.fb.com/SSIUSP" target="_blank">fb.com/SSIUSP</a>
-					<br>
-					<i class="fa fa-envelope" aria-hidden="true"></i> <a mailto="semanasiusp@gmail.com">semanasiusp@gmail.com</a>
-					<br>
-				</div>
+			<div class="clearfix">
+				<div class="footer-logo"><a href="#"><img src="img/tiny_logo.png">Semana de Sistemas de Informação</a></div>
+				<dl class="footer-nav">
+					<dt class="nav-title">Edições Anteriores</dt>
+					<dd class="nav-item"><a href="http://www.each.usp.br/semanasi/2015/" target="_blank">V Semana</a></dd>
+					<dd class="nav-item"><a href="http://www.each.usp.br/semanasi/2013/index.php" target="_blank">IV Semana</a></dd>
+					<dd class="nav-item"><a href="http://www.each.usp.br/semanasi/2012/" target="_blank">III Semana</a></dd>
+					<dd class="nav-item"><a href="http://www.each.usp.br/semanasi/2010/" target="_blank">II Semana</a></dd>
+					<dd class="nav-item"><a href="http://www.each.usp.br/semanasi/2009/" target="_blank">I Semana</a></dd>
+				</dl>
+				<dl class="footer-nav">
+					<dt class="nav-title">CONTATO</dt>
+					<dd class="nav-item"><i class="fa fa-facebook-official" aria-hidden="true"></i> <a href="http://www.fb.com/SSIUSP" target="_blank">fb.com/SSIUSP</a></dd>
+					<dd class="nav-item"><i class="fa fa-envelope" aria-hidden="true"></i> <a mailto="semanasiusp@gmail.com">semanasiusp@gmail.com</a></dd>
+				</dl>
+				<dl class="footer-nav">
+					<dt class="nav-title">CONTATO</dt>
+					<dd class="nav-item"><i class="fa fa-facebook-official" aria-hidden="true"></i> <a href="http://www.fb.com/SSIUSP" target="_blank">fb.com/SSIUSP</a></dd>
+					<dd class="nav-item"><i class="fa fa-envelope" aria-hidden="true"></i> <a mailto="semanasiusp@gmail.com">semanasiusp@gmail.com</a></dd>
+				</dl>
 			</div>
-			<hr>
-			<p class="text-center">Copyright © 2016 DASI - Diretório Acadêmico de Sistemas de Informação.</p>
+			<div class="footer-copyright text-center">Copyright © 2016 DASI - Diretório Acadêmico de Sistemas de Informação.</div>
 		</div>
 	</footer>
 	

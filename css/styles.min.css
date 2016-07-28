@@ -388,7 +388,7 @@ footer {
 	// background-image: url(../img/footer.png);
 	margin-top: 15px;
 	color: white;
-	padding: 15px;
+	padding-top: 40px;
 }
 
 footer p {
@@ -407,35 +407,18 @@ footer a {
 	color: white;
 }
 
-footer a:hover {
-	text-decoration: underline;
+.footer-logo, .footer-nav {
+	min-width: 25%;
+	text-align: center;
 }
 
-footer p {
-	margin-top: 5px;
+.footer-logo {
+	margin-bottom: 40px
 }
 
-footer ul {
-	list-style-type: none;
-	padding: 0;
-	max-width: 155px;
+.footer-nav {
+	float: right;
 }
-
-ul.sites li {
-	display: flex;
-	justify-content: space-between;
-}
-
-footer .row {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-footer .row > div {
-	/*width: auto;*/
-}
-
 nav.navbar {
 	width: auto;
 }
@@ -552,6 +535,12 @@ header .row {
 .convidado16 {background-position-y: -4500px;}
 .convidado17 {background-position-y: -4800px;}
 .convidado18 {background-position-y: -5100px;}
+.convidado19 {background-position-y: -5400px;}
+.convidado20 {background-position-y: -5700px;}
+.convidado21 {background-position-y: -6000px;}
+.convidado22 {background-position-y: -6300px;}
+.convidado23 {background-position-y: -6600px;}
+.convidado24 {background-position-y: -6900px;}
 
 html, body {
 	overflow-x: hidden;
@@ -593,7 +582,7 @@ section h2, section h3 {
 
 table, table th {
 	text-align: center;
-	color: #511d7d;
+	// color: #511d7d;
 }
 
 .banner {
@@ -670,4 +659,8 @@ table, table th {
 	left: 0;
 	/*width: 100% !important;*/
 	/*height: 100% !important;*/
+}
+
+.hackathon img {
+	max-width: 400px;
 }
