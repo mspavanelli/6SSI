@@ -408,8 +408,10 @@ footer a {
 }
 
 .footer-logo, .footer-nav {
-	min-width: 25%;
+	min-width: 33%;
 	text-align: center;
+	padding-left: 10px;2
+	padding-right: 10px;
 }
 
 .footer-logo {
@@ -487,13 +489,17 @@ header .row {
 }
 .marcas {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 }
 
+@media screen and (max-width: 1200px) {
+	.marcas {
+		flex-wrap: wrap;
+	}
+}
+
 .marcas figure {
-	/*border: 1px solid;*/
 	margin: 30px 50px;
 }
 
@@ -502,6 +508,7 @@ header .row {
     max-height: 85px;
     width: auto;
 }
+
 .convidado {
 	background-image: url(../img/palestrantes.png);
 	background-repeat: no-repeat;
@@ -648,6 +655,12 @@ table, table th {
     overflow: hidden;
 }
 
+.hackathon img {
+	width: 300px;
+	max-width: 90vw;
+	margin: auto;
+}
+
 .mapa {
     height: 0;
     padding-bottom: 350px; /*This is the aspect ratio*/
@@ -659,8 +672,4 @@ table, table th {
 	left: 0;
 	/*width: 100% !important;*/
 	/*height: 100% !important;*/
-}
-
-.hackathon img {
-	max-width: 400px;
 }

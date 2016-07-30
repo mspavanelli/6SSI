@@ -3,22 +3,23 @@
 	<div class="container">
 		<h2>Programação</h2>
 
-		<ul class="nav nav-pills" ng-init="dia = 15">
-			<li role="presentation"><a ng-click="dia = 15" href="">15/08 (segunda-feira)</a></li>
+		<div id="esse" class="nav nav-pills" ng-init="dia = 15" role="group" aria-label="...">
+			<li role="presentation" class="active"><a ng-click="dia = 15" href="">15/08 (segunda-feira)</a></li>
 			<li role="presentation"><a ng-click="dia = 16" href="">16/08 (terça-feira)</a></li>
 			<li role="presentation"><a ng-click="dia = 17" href="">17/08 (quarta-feira)</a></li>
 			<li role="presentation"><a ng-click="dia = 18" href="">18/08 (quinta-feira)</a></li>
 			<li role="presentation"><a ng-click="dia = 19" href="">19/08 (sexta-feira)</a></li>
-		</ul>
+		</div>
 
 		<hr>
 
-		<table class="table table-striped table-hover">
+		<table class="table table-hover">
 			<thead>
 			<tr>
 				<th>Horário</th>
-				<th>Palestra</th>
-				<th>Palestrante</th>
+				<th>Atividade</th>
+				<th>Convidado</th>
+				<th>Local</th>
 			</tr>
 			</thead>
 			<tbody>
@@ -26,6 +27,7 @@
 				<td>{{palestra.horario}}</td>
 				<td>{{palestra.titulo}}</td>
 				<td>{{palestra.palestrante}}</td>
+				<td class="text-primary">Auditório Azul</td>
 			</tr>
 			</tbody>
 		</table>
