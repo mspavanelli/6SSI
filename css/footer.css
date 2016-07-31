@@ -23,8 +23,10 @@ footer a {
 }
 
 .footer-logo, .footer-nav {
-	min-width: 25%;
+	min-width: 33%;
 	text-align: center;
+	padding-left: 10px;2
+	padding-right: 10px;
 }
 
 .footer-logo {

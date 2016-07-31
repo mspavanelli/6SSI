@@ -1,12 +1,16 @@
 .marcas {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 }
 
+@media screen and (max-width: 1200px) {
+	.marcas {
+		flex-wrap: wrap;
+	}
+}
+
 .marcas figure {
-	/*border: 1px solid;*/
 	margin: 30px 50px;
 }
 

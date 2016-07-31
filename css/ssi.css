@@ -95,6 +95,10 @@ table, table th {
 	border-color: #511d7d;
 }
 
+.programacao {
+	overflow-x: scroll;
+}
+
 .mapa, .inscricao {
     position: relative;
     margin: auto;
@@ -102,6 +106,12 @@ table, table th {
 	display: flex;
 	justify-content: center;
     overflow: hidden;
+}
+
+.hackathon img {
+	width: 300px;
+	max-width: 90vw;
+	margin: auto;
 }
 
 .mapa {
@@ -115,8 +125,4 @@ table, table th {
 	left: 0;
 	/*width: 100% !important;*/
 	/*height: 100% !important;*/
-}
-
-.hackathon img {
-	max-width: 400px;
 }

@@ -16,5 +16,16 @@ $(document).ready(function(){
 		autoplaySpeed: 10000,
 	});
 	
-	['sobre', 'palestrantes', 'programacao', 'inscricao', 'hackathon', 'localizacao'].forEach(scroll);
+	$(".nav-pills").on('click', 'li',function() {
+		$(this).addClass('active').siblings().removeClass('active');
+	});
+
+	['home','sobre', 'palestrantes', 'programacao', 'inscricao', 'hackathon', 'localizacao'].forEach(scroll);
+
+});
+
+$(document).ready(function(){
+	$(".nav-pills").on('click', 'li', function() {
+		$(this).addClass('active').siblings().removeClass('active');
+	});
 });

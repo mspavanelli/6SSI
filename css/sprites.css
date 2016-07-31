@@ -1,10 +1,42 @@
 .convidado {
-	background-image: url(../img/palestrantes.png);
+	background-image: url(../img/palestrantes_sprite.png);
 	background-repeat: no-repeat;
 	position: relative;
 	width: 300px;
 	height: 300px;
 }
+
+.adriana-silva, .ariane-parra, .brian, .bruno-cicanci, .caio-dias, 
+.cassia-sanctos, .claudia-rosas, .claudio-amaral, .diego-aranha, .erick-varzot, 
+.fernanda-bernardo, .fernando-babadopulos, .fernando-chamis, .fernando-rychlewski, .gustavo-silva, 
+.jessica, .jorge-vieira, .luis-leao, .marcio-ribeiro, .paulo-roberto, 
+.pedro-shiguihara, .renato-stefani, .rosario-villalta, .thiago-araujo
+{ max-width: 100%; background-size: 100%; background-image: url('../img/palestrantes_sprite.png'); }
+ 
+.adriana-silva { background-position: 0 0%; background-size: 100%; }
+.ariane-parra { background-position: 0 4.347826%; background-size: 100%; }
+.brian { background-position: 0 8.695652%; background-size: 100%; }
+.bruno-cicanci { background-position: 0 13.043478%; background-size: 100%; }
+.caio-dias { background-position: 0 17.391304%; background-size: 100%; }
+.cassia-sanctos { background-position: 0 21.73913%; background-size: 100%; }
+.claudia-rosas { background-position: 0 26.086957%; background-size: 100%; }
+.claudio-amaral { background-position: 0 30.434783%; background-size: 100%; }
+.diego-aranha { background-position: 0 34.782609%; background-size: 100%; }
+.erick-varzot { background-position: 0 39.130435%; background-size: 100%; }
+.fernanda-bernardo { background-position: 0 43.478261%; background-size: 100%; }
+.fernando-babadopulos { background-position: 0 47.826087%; background-size: 100%; }
+.fernando-chamis { background-position: 0 52.173913%; background-size: 100%; }
+.fernando-rychlewski { background-position: 0 56.521739%; background-size: 100%; }
+.gustavo-silva { background-position: 0 60.869565%; background-size: 100%; }
+.jessica { background-position: 0 65.217391%; background-size: 100%; }
+.jorge-vieira { background-position: 0 69.565217%; background-size: 100%; }
+.luis-leao { background-position: 0 73.913043%; background-size: 100%; }
+.marcio-ribeiro { background-position: 0 78.26087%; background-size: 100%; }
+.paulo-roberto { background-position: 0 82.608696%; background-size: 100%; }
+.pedro-shiguihara { background-position: 0 86.956522%; background-size: 100%; }
+.renato-stefani { background-position: 0 91.304348%; background-size: 100%; }
+.rosario-villalta { background-position: 0 95.652174%; background-size: 100%; }
+.thiago-araujo { background-position: 0 100%; background-size: 100%; }
 
 .content {
 	display: flex;
@@ -12,28 +44,3 @@
 	justify-content: space-around;
 	align-items: center;
 }
-
-.convidado1 {background-position-y: 0;}
-.convidado2 {background-position-y: -300px;}
-.convidado3 {background-position-y: -600px;}
-.convidado4 {background-position-y: -900px;}
-.convidado5 {background-position-y: -1200px;}
-.convidado6 {background-position-y: -1500px;}
-.convidado7 {background-position-y: -1800px;}
-.convidado8 {background-position-y: -2100px;}
-.convidado9 {background-position-y: -2400px;}
-.convidado10 {background-position-y: -2700px;}
-.convidado11 {background-position-y: -3000px;}
-.convidado12 {background-position-y: -3300px;}
-.convidado13 {background-position-y: -3600px;}
-.convidado14 {background-position-y: -3900px;}
-.convidado15 {background-position-y: -4200px;}
-.convidado16 {background-position-y: -4500px;}
-.convidado17 {background-position-y: -4800px;}
-.convidado18 {background-position-y: -5100px;}
-.convidado19 {background-position-y: -5400px;}
-.convidado20 {background-position-y: -5700px;}
-.convidado21 {background-position-y: -6000px;}
-.convidado22 {background-position-y: -6300px;}
-.convidado23 {background-position-y: -6600px;}
-.convidado24 {background-position-y: -6900px;}
