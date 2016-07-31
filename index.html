@@ -118,6 +118,10 @@
 	<script src="js/angular-sanitize.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/all.min.js"></script>
-
+	<script>
+		$(".nav-pills").on('click', 'li',function() {
+		$(this).addClass('active').siblings().removeClass('active');
+	});
+	</script>
 </body>
 </html>
