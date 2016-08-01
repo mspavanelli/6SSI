@@ -37,7 +37,7 @@ section h2, section h3 {
 }
 
 table, table th {
-	text-align: center;
+	// text-align: center;
 	// color: #511d7d;
 }
 
@@ -90,10 +90,14 @@ table, table th {
 .nav-pills>li>a {
 	color: #511d7d;
 }
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-	background-color: #511d7d;
-	border-color: #511d7d;
+
+.nav-pills>li>a:focus {
+	color: #511d7d;	
 }
+// .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+// 	background-color: #511d7d;
+// 	border-color: #511d7d;
+// }
 
 .programacao {
 	overflow-x: scroll;
@@ -125,4 +129,26 @@ table, table th {
 	left: 0;
 	/*width: 100% !important;*/
 	/*height: 100% !important;*/
+}
+
+.btn-default {
+	border: 1px solid #511d7d;
+}
+
+.btn-default:hover {
+	background-color: rgba(204, 209, 217, 0.12);
+}
+
+.btn-default a {
+	color: #511d7d;
+}
+
+.nav>li>a:focus {
+	background-color: #511d7d;
+	color: white;
+}
+
+.nav>li>a:hover {
+	background-color: #eee;
+	color: #511d7d;
 }

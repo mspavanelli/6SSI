@@ -6,7 +6,8 @@ var scroll = function(section) {
 	});
 }
 
-$(document).ready(function(){
+$(document).ready(function() {
+
 	$('.biografias').slick({
 		dots: true,
 		infinite: true,
@@ -15,17 +16,12 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 10000,
 	});
-	
-	$(".nav-pills").on('click', 'li',function() {
-		$(this).addClass('active').siblings().removeClass('active');
-	});
 
+	$(".nav-pills").on('click', '#datas li a', function() {
+		alert('fdf');
+		// $(this).addClass('active').siblings().removeClass('active');
+	});
+	
 	['home','sobre', 'palestrantes', 'programacao', 'inscricao', 'hackathon', 'localizacao'].forEach(scroll);
 
-});
-
-$(document).ready(function(){
-	$(".nav-pills").on('click', 'li', function() {
-		$(this).addClass('active').siblings().removeClass('active');
-	});
 });
