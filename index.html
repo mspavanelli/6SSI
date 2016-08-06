@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<!-- endbuild -->
 	
-	<script src="https://use.fontawesome.com/9b2c76607c.js"></script>
+	<!-- <script src="https://use.fontawesome.com/9b2c76607c.js"></script> -->
 
 </head>
 
@@ -100,12 +100,12 @@
 			<div class="container">
 				<h2>Programação</h2>
 
-				<div id="datas" class="nav nav-pills" ng-init="dia = 15" role="group">
-					<li role="presentation"><a ng-click="dia = 15" href="">15/08 (segunda-feira)</a></li>
-					<li role="presentation"><a ng-click="dia = 16" href="">16/08 (terça-feira)</a></li>
-					<li role="presentation"><a ng-click="dia = 17" href="">17/08 (quarta-feira)</a></li>
-					<li role="presentation"><a ng-click="dia = 18" href="">18/08 (quinta-feira)</a></li>
-					<li role="presentation"><a ng-click="dia = 19" href="">19/08 (sexta-feira)</a></li>
+				<div id="datas" class="btn-group" ng-init="dia = 15">
+					<button class="btn btn-default active" ng-click="dia = 15">15/08 (segunda-feira)</button>
+					<button class="btn btn-default" ng-click="dia = 16">16/08 (terça-feira)</button>
+					<button class="btn btn-default" ng-click="dia = 17">17/08 (quarta-feira)</button>
+					<button class="btn btn-default" ng-click="dia = 18">18/08 (quinta-feira)</button>
+					<button class="btn btn-default" ng-click="dia = 19">19/08 (sexta-feira)</button>
 				</div>
 
 				<hr>
@@ -122,7 +122,7 @@
 					<tr ng-repeat="palestra in palestras(dia)" ng-class="palestra.destaque">
 						<td>{{palestra.horario}}</td>
 						<td>{{palestra.titulo}}</td>
-						<td>{{palestra.palestrante}}</td>
+						<td ng-bind-html="palestra.palestrante"></td>
 						<td ng-class="palestra.local.classe">{{palestra.local.nome}}</td>
 					</tr>
 					</tbody>
@@ -135,19 +135,26 @@
 		<section class="hackathon container">
 			<h2>EACH Hack Lab</h2>
 
-			<figure class="floated">
-				<a href="https://goo.gl/hWBR1y" target="_blank">
-					<img src="img/hack_lab.png" alt="" class="center-block img-responsive img-thumbnail">
-				</a>
-			</figure>
-			
-			<div class="text-justify">
-				<p>Este ano, a SSI contará com uma super novidade:</p>
-				<h4>O EACH Hack Lab, o primeiro Hackathon da EACH!</h3>
-				<p>Hackathon é uma maratona de programação, onde os competidores aplicam todo seu conhecimento a fim de solucionar um problema ou propor uma ideia, de acordo com o tema.</p>
-				<p>O EACH Hack Lab irá finalizar as atividades da SSI e acontecerá entre sexta-feira (19) e sábado (20). Serão 30 horas de desafios, trabalho duro e aprendizado recompensados com prêmios no final!</p>
-				<p>Fique ligado no nosso evento pra saber de todas as informações!</p>
-				<p>Link do evento: <a href="https://goo.gl/hWBR1y" target="_blank">EACH Hack Lab</a></p>
+			<div class="row">
+				<figure class="floated">
+					<a href="https://goo.gl/hWBR1y" target="_blank">
+						<img src="img/hack_lab.png" alt="" class="center-block img-responsive img-thumbnail">
+					</a>
+				</figure>
+				
+				<div class="text-justify">
+					<p>Este ano, a SSI contará com uma super novidade: O EACH Hack Lab, o primeiro Hackathon da EACH!</p>
+					<p>Hackathon é uma maratona de programação, onde os competidores aplicam todo seu conhecimento a fim de solucionar um problema ou propor uma ideia, de acordo com o tema.</p>
+					<p>O EACH Hack Lab irá finalizar as atividades da SSI e acontecerá entre sexta-feira (19) e sábado (20). Serão 30 horas de desafios, trabalho duro e aprendizado recompensados com prêmios no final!</p>
+					<p>Fique ligado no nosso evento pra saber de todas as informações!</p>
+					<p>Link do evento: <a href="https://goo.gl/hWBR1y" target="_blank">EACH Hack Lab</a></p>
+				</div>
+			</div>
+
+			<div class="alert alert-info">
+				<h4>INSCRIÇÕES ABERTAS</h4>
+				<!-- <p>Change this and that and try again. <a class="alert-link">Duis mollis</a>, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p> -->
+				<p><a class="btn btn-primary" href="https://goo.gl/1WdGSD" target="_blank">Formulário de Inscrição</a> <a class="btn btn-link" href="https://goo.gl/vUP7U6" target="_blank">Regulamento</a></p>
 			</div>
 
 		</section>
@@ -159,7 +166,7 @@
 				<div class="mapa">
 					<iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.328110319832!2d-46.502840516518745!3d-23.484688509590992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xb1812652638ca56e!2sUniversidade+de+S%C3%A3o+Paulo+-+Escola+de+Artes%2C+Ci%C3%AAncias+e+Humanidades!5e0!3m2!1spt-BR!2sbr!4v1425937449480" width="1200" height="300" frameborder="0"></iframe>
 				</div>
-				<button class="btn btn-lg center-block btn-default"><a href="http://each.uspnet.usp.br/site/como-chegar.php?item=apresentacao" target="_blank">Formas de Chegar</a></button>
+				<button class="btn btn-lg center-block btn-default"><a href="http://www5.each.usp.br/como-chegar/" target="_blank">Formas de Chegar</a></button>
 			</div>
 		</section>
 		<hr>

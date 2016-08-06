@@ -36,6 +36,14 @@ section h2, section h3 {
 	color: #1D355A;
 }
 
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    justify-content: space-around;
+}
+
 table, table th {
 	// text-align: center;
 	// color: #511d7d;
@@ -94,10 +102,19 @@ table, table th {
 .nav-pills>li>a:focus {
 	color: #511d7d;	
 }
-// .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-// 	background-color: #511d7d;
-// 	border-color: #511d7d;
-// }
+
+#datas button {
+	border: none;
+	color: #391954;
+	border-radius: 10px;
+	padding: 8px 14px;
+	margin-bottom: 10px;
+}
+
+#datas button.active {
+	background-color: #511d7d;
+	color: white;
+}
 
 .programacao {
 	overflow-x: scroll;
@@ -118,12 +135,21 @@ table, table th {
 	margin: auto;
 }
 
-.mapa {
-    height: 0;
-    padding-bottom: 350px; /*This is the aspect ratio*/
+.form-inscricao {
+	text-align: center;
 }
 
-.mapa iframe, .inscricao iframe {
+.form-inscricao iframe {
+	text-align: center;
+	max-width: 100%;
+}
+
+.mapa {
+	height: 0;
+	padding-bottom: 350px;
+}
+
+.mapa iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
