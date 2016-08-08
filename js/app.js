@@ -79,14 +79,13 @@ angular.module('ssi', ['ngSanitize'])
 			},
 			{
 				'horario': '13h',
+				'titulo': 'Painel: “Software Livre e Dados abertos”',
+				'destaque': 'Paulo Krecheu, Márcio Moretto e Gisele Craveiro'
+			},			
+			{
+				'horario': '14h30',
 				'titulo': 'Desenvolvendo uma Startup do zero durante a graduação - Nutrisoft',
 				'palestrante': 'Gustavo Silva',
-				'local': $scope.local[1]
-			},
-			{
-				'horario': '15h30',
-				'titulo': 'HandsOn de Internet das Coisas com Firebase',
-				'palestrante': 'Luís Leão',
 				'local': $scope.local[1]
 			},
 			{
@@ -151,10 +150,6 @@ angular.module('ssi', ['ngSanitize'])
 				'horario': '12h',
 				'titulo': 'Intervalo',
 				'destaque': 'active'
-			},
-			{
-				'horario': '12h30',
-				'titulo': 'A definir'
 			},
 			{
 				'horario': '14h30',
@@ -223,12 +218,20 @@ angular.module('ssi', ['ngSanitize'])
 			},
 			{
 				'horario': '12h30',
-				'titulo': 'A definir'
+				'titulo': 'Novidades do Android N',
+				'palestrante': 'Suelen Carvalho'
 			},
 			{
-				'horario': '14h30',
-				'titulo': 'A definir'
+				'horario': '14h',
+				'titulo': 'Progressive WebApps: o melhor da Web, Appficada',
+				'palestrante': 'Sérgio Lopes'
 			},
+			{
+				'horario': '15h',
+				'titulo': 'HandsOn de Internet das Coisas com Firebase',
+				'palestrante': 'Luís Leão',
+				'local': $scope.local[1]
+			},			
 			{
 				'horario': '16h',
 				'titulo': 'Coffe Break',
