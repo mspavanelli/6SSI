@@ -3,12 +3,16 @@ angular.module('ssi', ['ngSanitize'])
 		$scope.local =
 		[
 			{
-				'nome': 'EACH-USP',
+				'nome': 'EACH - USP',
 				'classe': 'text-default'
 			},
 			{
 				'nome': 'Auditório Azul',
 				'classe': 'text-primary'
+			},
+			{
+				'nome': 'Hall dos Auditórios',
+				'classe': 'text-default'
 			},
 			{
 				'nome': 'Auditório Verde',
@@ -51,10 +55,21 @@ angular.module('ssi', ['ngSanitize'])
 				'horario': '19h',
 				'titulo': 'Abertura oficial da 6ª SSI',
 				'local': $scope.local[1]
+			},
+			{
+				'horario': '19h30',
+				'titulo': 'Esquenta EACH Hack Lab',
+				'local': $scope.local[1]
 			}
 		];
 		$scope.palestras16 =
 		[
+			{
+				'horario': '8h - 12h30',
+				'titulo': 'Workshop PPgSI',
+				'palestrante': '<a href="http://goo.gl/btO4lQ" target="_blank">PPgSI</a>',
+				'local': $scope.local[3]
+			},
 			{
 				'horario': '9h',
 				'titulo': 'Coffee Break',
@@ -89,6 +104,21 @@ angular.module('ssi', ['ngSanitize'])
 				'local': $scope.local[1]
 			},
 			{
+<<<<<<< HEAD
+=======
+				'horario': '13h30 - 18h30',
+				'titulo': 'Workshop PPgSI',
+				'palestrante': '<a href="http://goo.gl/btO4lQ" target="_blank">PPgSI</a>',
+				'local': $scope.local[3]
+			},
+			{
+				'horario': '15h30',
+				'titulo': 'HandsOn de Internet das Coisas com Firebase',
+				'palestrante': 'Luís Leão',
+				'local': $scope.local[1]
+			},
+			{
+>>>>>>> be89ab5e7e84ef3b741b9cc77fa827e620d50c41
 				'horario': '16h30',
 				'titulo': 'Coffee Break',
 				'local': $scope.local[2],
@@ -124,6 +154,12 @@ angular.module('ssi', ['ngSanitize'])
 		$scope.palestras17 =
 		[
 			{
+				'horario': '8h - 12h30',
+				'titulo': 'Workshop PPgSI',
+				'palestrante': '<a href="http://goo.gl/btO4lQ" target="_blank">PPgSI</a>',
+				'local': $scope.local[3]
+			},
+			{
 				'horario': '9h',
 				'titulo': 'Coffe Break',
 				'local': $scope.local[2],
@@ -152,6 +188,25 @@ angular.module('ssi', ['ngSanitize'])
 				'destaque': 'active'
 			},
 			{
+<<<<<<< HEAD
+=======
+				'horario': '12h30',
+				'titulo': 'A definir'
+			},
+			{
+				'horario': '13h30 - 18h30',
+				'titulo': 'Workshop PPgSI',
+				'palestrante': '<a href="http://goo.gl/btO4lQ" target="_blank">PPgSI</a>',
+				'local': $scope.local[3]
+			},
+			{
+				'horario': '13h30',
+				'titulo': 'Eu preferiria estar codando: entendendo o movimento atual de mulheres na tecnologia.',
+				'palestrante': 'Tânia Simões',
+				'local': $scope.local[1]
+			},
+			{
+>>>>>>> be89ab5e7e84ef3b741b9cc77fa827e620d50c41
 				'horario': '14h30',
 				'titulo': 'Aperfeiçoando o voto eletrônico no Brasil',
 				'palestrante': 'Diego Aranha',
@@ -171,7 +226,8 @@ angular.module('ssi', ['ngSanitize'])
 			},
 			{
 				'horario': '17h',
-				'titulo': 'A definir'
+				'titulo': 'Game Design 101 :)',
+				'palestrante': 'Helô Yoshioka'
 			},
 			{
 				'horario': '18h',
@@ -194,6 +250,12 @@ angular.module('ssi', ['ngSanitize'])
 		];		
 		$scope.palestras18 =
 		[
+			{
+				'horario': '8h - 12h30',
+				'titulo': 'Workshop PPgSI',
+				'palestrante': '<a href="http://goo.gl/btO4lQ" target="_blank">PPgSI</a>',
+				'local': $scope.local[3]
+			},
 			{
 				'horario': '9h',
 				'titulo': 'Coffe Break',
@@ -222,9 +284,20 @@ angular.module('ssi', ['ngSanitize'])
 				'palestrante': 'Suelen Carvalho'
 			},
 			{
+<<<<<<< HEAD
 				'horario': '14h',
 				'titulo': 'Progressive WebApps: o melhor da Web, Appficada',
 				'palestrante': 'Sérgio Lopes'
+=======
+				'horario': '13h30 - 18h30',
+				'titulo': 'Workshop PPgSI',
+				'palestrante': '<a href="http://goo.gl/btO4lQ" target="_blank">PPgSI</a>',
+				'local': $scope.local[3]
+			},
+			{
+				'horario': '14h30',
+				'titulo': 'A definir'
+>>>>>>> be89ab5e7e84ef3b741b9cc77fa827e620d50c41
 			},
 			{
 				'horario': '15h',
@@ -267,6 +340,11 @@ angular.module('ssi', ['ngSanitize'])
 				'titulo': 'YouTube e ativismo LGBT: como a comunicação pode salvar vidas',
 				'palestrante': 'Jessica Tauane',
 				'local': $scope.local[1]
+			},
+			{
+				'horario': '22h',
+				'titulo': 'Encerramento oficial da 6ªSSI',
+				'local': $scope.local[1]
 			}
 		];
 		$scope.palestras19 =
@@ -274,13 +352,7 @@ angular.module('ssi', ['ngSanitize'])
 			{
 				'horario': '10h',
 				'titulo': 'Início do EACH Hack Lab',
-				'local': $scope.local[3]
-			},
-			{
-				'horario': '16h',
-				'titulo': 'Atrações Artísticas',
-				'local': 'EACH-USP',
-				'local': $scope.local[0]
+				'local': $scope.local[4]
 			}
 		];
 
@@ -343,6 +415,11 @@ angular.module('ssi', ['ngSanitize'])
 				'descricao': 'Diego Aranha é professor da Unicamp. Coordenou a primeira equipe capaz de detectar e explorar vulnerabilidades no software da urna eletrônica em testes controlados organizados pelo TSE. Tem experiência na área de Criptografia e Segurança Computacional, com ênfase em implementação eficiente de algoritmos criptográficos e análise de segurança de sistemas reais. É Bacharel em Ciência da Computação pela Universidade de Brasília (2005), Mestre (2007) e Doutor (2011) em Ciência da Computação pela Universidade Estadual de Campinas. Recebeu em 2015 os prêmios Google Latin America Research Award para pesquisa em privacidade e Inovadores com Menos de 35 Anos Brasil da MIT Technology Review por seu trabalho com o voto eletrônico.'
 			},
 			{
+				'nome': 'Eduardo Bonini',
+				'foto': 'eduardo-bonini',
+				'descricao': 'Eduardo Bonini é designer de formação, especialista em branding e mestre em comunicação, comandou a agência de branding Fino Criativo de 2008 à 2015, quando passou à gerenciar a BTC e prestar consultoria à empreendedores.  Em paralelo, leciona empreendedorismo, marketing e branding na graduação e pós-graduação do Senac-SP',
+			},
+			{
 				'nome': 'Erick Varzot',
 				'foto': 'erick-varzot',
 				'descricao': 'Erick Varzot é desenvolvedor de Games e Dungeon Master. Bacharel em Ciência da Computação na Universidade São Judas Tadeu, atua profissionalmente em TI desde 2012 e passou a trabalhar com Pesquisa e Desenvolvimento de Games desde 2013. É Cofundador da Etheral Flame Studios, empresa paulistana que desenvolveu o game Spaceship Overdrive, o qual foi premiado como “Melhor jogo para portáteis/mobile da Brasil Game Show 2015” pela Brazil Game Awards e foi semifinalista no BIG Festival 2016.'
@@ -368,9 +445,24 @@ angular.module('ssi', ['ngSanitize'])
 				'descricao':'Fernando Rychlewski atua há mais de 16 anos como desenvolvedor curioso, um Nerd como ele mesmo diz e tem mais de 8 anos de experiência em Análise e Gerência de Projetos de Sistemas em arquiteturas Web/Cloud. Os 12 anos de experiência com design gráfico fizeram com que se tornasse CEO de uma gráfica, seu Hobbie. Hoje atua na elaboração de evoluções tecnológicas e arquiteturas em sistemas de grandes corporações no mercado, além disso é organizador e palestrante de eventos para a comunidade de desenvolvedores brasileiros (Google Developers São Paulo, NetCoders, iMasters, etc).'
 			},
 			{
+				'nome': 'Gisele Craveiro',
+				'foto': 'gisele-craveiro',
+				'descricao':'Gisele S. Craveiro tem mestrado em Ciência da Computação pela Unicamp, doutorado em Engenharia Elétrica pela USP e é docente da EACH-USP desde 2005. Atua como coordenadora do grupo de pesquisa Colaboratório em Desenvolvimento e Participação (Colab-USP) e é pesquisadora de redes internacionais de pesquisa como a Iniciativa Latinoamericana por los Datos Abiertos e a Open Data Research Network.'
+			},
+			{
 				'nome': 'Gustavo Silva',
 				'foto': 'gustavo-silva',
 				'descricao': 'Gustavo Silva é fundador da NutriSoft Brazil, startup que nasceu em 2013 durante o curso de Sistemas de Informação da USP com o objetivo de aproximar pacientes de nutricionistas, buscando tornar mais acessível os serviços e conteúdos sobre alimentação saudável. A empresa atingiu em 2015 a marca de 500.000 downloads e recebeu seu primeiro investimento do Grupo Abril, depois no Vale do Silício recebeu outra rodada de investimento. Hoje a NutriSoft conta com uma equipe de 8 pessoas, mais de 2.000.000 downloads e quer revolucionar o atendimento de pacientes crônicos no Brasil.'
+			},
+			{
+				'nome': 'Heloisa Yoshioka',
+				'foto': 'heloisa-yoshioka',
+				'descricao': 'Heloisa Yoshioka é Product Owner na Tapps Games e Game Designer na Catavento Games. Formada em Design na FAU USP, já trabalhou com jogos para PC, web, mobile, tabuleiro, serious games, advergames, jogos educativos e de entretenimento.',
+			},
+			{
+				'nome': 'Iana Chan',
+				'foto': 'iana-chan',
+				'descricao': 'Iana é graduada em Comunicação Social com habilitação em jornalismo pela ECA/USP, apaixonada por tecnologia e educação. É fundadora da PrograMaria, iniciativa que tem como missão empoderar mulheres por meio da tecnologia e da programação. Além disso, é Community Manager na Liga Ventures, primeira aceleradora totalmente dedicada a conectar startups e grandes empresas.'
 			},
 			{
 				'nome': 'Jéssica Tauane',
@@ -381,6 +473,11 @@ angular.module('ssi', ['ngSanitize'])
 				'nome': 'Jorge Vieira',
 				'foto': 'jorge-vieira',
 				'descricao': 'Jorge Vieira é um programador e entusiasta de agile que acabou se apaixonando por empreendedorismo. Bacharel em Ciência da Computação pela Universidade São Judas Tadeu, possui mais de seis anos de experiência em desenvolvimento de software, dos quais três são dedicados ao Desenvolvimento de Games. É Cofundador da Etheral Flame Studios, empresa paulistana que desenvolveu o game Spaceship Overdrive, o qual foi premiado como “Melhor jogo para portáteis/mobile da Brasil Game Show 2015” pela Brazil Game Awards e foi semifinalista no BIG Festival 2016.'
+			},
+			{
+				'nome': 'Lucia Freitas',
+				'foto': 'lucia-freitas',
+				'descricao': 'Lucia Freitas é jornalista, blogueira, fundou o LuluzinhaCamp, primeiro grupo de mulheres da internet brasileira. Trabalha com produção de conteúdo para grandes empresas e milita pela igualdade de gêneros o tempo todo. '
 			},
 			{
 				'nome': 'Luis Leão',
@@ -411,6 +508,11 @@ angular.module('ssi', ['ngSanitize'])
 				'nome': 'Rosario Villalta',
 				'foto': 'rosario-villalta',
 				'descricao': 'Rosario Villalta é diretora de Sistemas de Informação, Engenharia de Software e Ciência da Computação na Universidade Peruana de Ciências Aplicadas (UPC). Possui mestrado em Ensino de Educação Superior pela Universidade Andres Bello do Chile, doutorado em Administração de Empresas pela Universidade Politécnica da Catalunya e MBA com especialização em Sistemas e Tecnologia da Informação pela ESAN.'
+			},
+			{
+				'nome': 'Tania Simões',
+				'foto': 'tania-simoes',
+				'descricao': 'Tania "Pat" Simões é bacharel e licenciada em física pela Unesp, mestreem física aplicada pela USP e doutora em física pela Unicamp. Recentemente iniciou pesquisa em teoria dos jogos evolucionários e na empreitada pelo aumento do número de mulheres na comunidade Python, cofundou o PyLadies São Paulo',
 			},
 			{
 				'nome': 'Thiago Araújo',

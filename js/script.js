@@ -17,9 +17,8 @@ $(document).ready(function() {
 		autoplaySpeed: 10000,
 	});
 
-	$(".nav-pills").on('click', '#datas li a', function() {
-		alert('fdf');
-		// $(this).addClass('active').siblings().removeClass('active');
+	$("#datas").on('click', 'button', function() {
+		$(this).addClass('active').siblings().removeClass('active');
 	});
 	
 	['home','sobre', 'palestrantes', 'programacao', 'inscricao', 'hackathon', 'localizacao'].forEach(scroll);
