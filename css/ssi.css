@@ -12,6 +12,20 @@ section h2, section h3 {
 	color: #391954;
 }
 
+*::selection {
+	color: white;
+	background-color: #391954;
+}
+
+ul.navbar-nav li:hover {
+	background-color: #391954;
+}
+
+.navbar-right button {
+	margin-left: 15px;
+	margin-right: 30px;
+}
+
 .floated {
 	float: right;
 	width: 400px;
@@ -44,10 +58,10 @@ section h2, section h3 {
     justify-content: space-around;
 }
 
-table, table th {
+/*table, table th {
 	// text-align: center;
 	// color: #511d7d;
-}
+}*/
 
 .banner {
 	margin-top: 51px;
@@ -77,6 +91,10 @@ table, table th {
 .slick-prev:before, .slick-next:before {
 	color: #391954 !important;
 	font-size: 20px !important;
+}
+
+.slick-dots {
+	display: none !important;
 }
 
 .painel {
@@ -165,8 +183,25 @@ table, table th {
 	background-color: rgba(204, 209, 217, 0.12);
 }
 
-.btn-default a {
-	color: #511d7d;
+
+.btn-purple {
+	color: #563d7c;
+	background-color: transparent;
+	border-color: #563d7c;
+}
+
+.btn-purple a {
+	color: #563d7c;
+}
+
+.btn-purple:hover {
+	color: #fff;
+    background-color: #563d7c;
+    border-color: #563d7c;
+}
+
+.btn-purple:hover a {
+	color: #fff;
 }
 
 .nav>li>a:focus {

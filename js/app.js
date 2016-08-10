@@ -98,27 +98,18 @@ angular.module('ssi', ['ngSanitize'])
 				'destaque': 'Paulo Krecheu, Márcio Moretto e Gisele Craveiro'
 			},			
 			{
-				'horario': '14h30',
-				'titulo': 'Desenvolvendo uma Startup do zero durante a graduação - Nutrisoft',
-				'palestrante': 'Gustavo Silva',
-				'local': $scope.local[1]
-			},
-			{
-<<<<<<< HEAD
-=======
 				'horario': '13h30 - 18h30',
 				'titulo': 'Workshop PPgSI',
 				'palestrante': '<a href="http://goo.gl/btO4lQ" target="_blank">PPgSI</a>',
 				'local': $scope.local[3]
 			},
 			{
-				'horario': '15h30',
-				'titulo': 'HandsOn de Internet das Coisas com Firebase',
-				'palestrante': 'Luís Leão',
+				'horario': '14h30',
+				'titulo': 'Desenvolvendo uma Startup do zero durante a graduação - Nutrisoft',
+				'palestrante': 'Gustavo Silva',
 				'local': $scope.local[1]
 			},
 			{
->>>>>>> be89ab5e7e84ef3b741b9cc77fa827e620d50c41
 				'horario': '16h30',
 				'titulo': 'Coffee Break',
 				'local': $scope.local[2],
@@ -188,12 +179,6 @@ angular.module('ssi', ['ngSanitize'])
 				'destaque': 'active'
 			},
 			{
-<<<<<<< HEAD
-=======
-				'horario': '12h30',
-				'titulo': 'A definir'
-			},
-			{
 				'horario': '13h30 - 18h30',
 				'titulo': 'Workshop PPgSI',
 				'palestrante': '<a href="http://goo.gl/btO4lQ" target="_blank">PPgSI</a>',
@@ -206,7 +191,6 @@ angular.module('ssi', ['ngSanitize'])
 				'local': $scope.local[1]
 			},
 			{
->>>>>>> be89ab5e7e84ef3b741b9cc77fa827e620d50c41
 				'horario': '14h30',
 				'titulo': 'Aperfeiçoando o voto eletrônico no Brasil',
 				'palestrante': 'Diego Aranha',
@@ -284,20 +268,9 @@ angular.module('ssi', ['ngSanitize'])
 				'palestrante': 'Suelen Carvalho'
 			},
 			{
-<<<<<<< HEAD
 				'horario': '14h',
 				'titulo': 'Progressive WebApps: o melhor da Web, Appficada',
 				'palestrante': 'Sérgio Lopes'
-=======
-				'horario': '13h30 - 18h30',
-				'titulo': 'Workshop PPgSI',
-				'palestrante': '<a href="http://goo.gl/btO4lQ" target="_blank">PPgSI</a>',
-				'local': $scope.local[3]
-			},
-			{
-				'horario': '14h30',
-				'titulo': 'A definir'
->>>>>>> be89ab5e7e84ef3b741b9cc77fa827e620d50c41
 			},
 			{
 				'horario': '15h',
