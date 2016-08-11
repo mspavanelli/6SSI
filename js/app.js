@@ -95,7 +95,8 @@ angular.module('ssi', ['ngSanitize'])
 			{
 				'horario': '13h',
 				'titulo': 'Painel: “Software Livre e Dados abertos”',
-				'destaque': 'Paulo Krecheu, Márcio Moretto e Gisele Craveiro'
+				'palestrante': 'Paulo Krecheu, Márcio Moretto e Gisele Craveiro',
+				'local': $scope.local[1]
 			},			
 			{
 				'horario': '13h30 - 18h30',
@@ -186,8 +187,8 @@ angular.module('ssi', ['ngSanitize'])
 			},
 			{
 				'horario': '13h30',
-				'titulo': 'Eu preferiria estar codando: entendendo o movimento atual de mulheres na tecnologia.',
-				'palestrante': 'Tânia Simões',
+				'titulo': 'Hackeando Dados Públicos com Python',
+				'palestrante': 'Fernando Masanori',
 				'local': $scope.local[1]
 			},
 			{
@@ -265,12 +266,14 @@ angular.module('ssi', ['ngSanitize'])
 			{
 				'horario': '12h30',
 				'titulo': 'Novidades do Android N',
-				'palestrante': 'Suelen Carvalho'
+				'palestrante': 'Suelen Carvalho',
+				'local': $scope.local[1]
 			},
 			{
 				'horario': '14h',
 				'titulo': 'Progressive WebApps: o melhor da Web, Appficada',
-				'palestrante': 'Sérgio Lopes'
+				'palestrante': 'Sérgio Lopes',
+				'local': $scope.local[1]
 			},
 			{
 				'horario': '15h',
@@ -413,6 +416,11 @@ angular.module('ssi', ['ngSanitize'])
 				'descricao': 'Fernando Chamis é bacharel em Ciência da Computação e pós-graduado em e-business e Gestão Empresarial pelo Instituto Presbiteriano Mackenzie. Sócio-diretor da Webcore, empresa de desenvolvimento de soluções interativas fundada em 1999. Em 2007 criou também a divisão Webcore Games, responsável pela criação de jogos voltados para entretenimento, infantil e publicidade. Em 2016 lançou o jogo My Night Job para PlayStation4 e Steam. É também diretor da Abragames - Associação Brasileira dos Desenvolvedores de Jogos Digitais.'
 			},
 			{
+				'nome': 'Fernando Massanori',
+				'foto': 'fernando-massanori',
+				'descricao': 'Fernando Massanori é professor da FATEC São José dos Campos, adora dar aulas, graduado em Computação pelo IME-USP, mestrado pelo ITA. Já desenvolveu projetos para Credicard Mastercard e Itaú BankBoston. Nos dois últimos anos deu mais de cem palestras e minicursos, na comunidade Python, viajando pelo Brasil e outros quinze países. É o criador do Python para Zumbis http://pycursos.com/python-para-zumbis/ Python é a sua desculpa para fazer amigos pelo mundo. Nos finais de semana ajuda em projetos sociais ligados à educação infantil. Os contatos dele você encontra em <a href="https://about.me/fmasanori" target="_blank">about.me/fmasanori</a>'
+			},
+			{
 				'nome': 'Fernando Rychlewski',
 				'foto': 'fernando-rychlewski',
 				'descricao':'Fernando Rychlewski atua há mais de 16 anos como desenvolvedor curioso, um Nerd como ele mesmo diz e tem mais de 8 anos de experiência em Análise e Gerência de Projetos de Sistemas em arquiteturas Web/Cloud. Os 12 anos de experiência com design gráfico fizeram com que se tornasse CEO de uma gráfica, seu Hobbie. Hoje atua na elaboração de evoluções tecnológicas e arquiteturas em sistemas de grandes corporações no mercado, além disso é organizador e palestrante de eventos para a comunidade de desenvolvedores brasileiros (Google Developers São Paulo, NetCoders, iMasters, etc).'
@@ -450,7 +458,7 @@ angular.module('ssi', ['ngSanitize'])
 			{
 				'nome': 'Lucia Freitas',
 				'foto': 'lucia-freitas',
-				'descricao': 'Lucia Freitas é jornalista, blogueira, fundou o LuluzinhaCamp, primeiro grupo de mulheres da internet brasileira. Trabalha com produção de conteúdo para grandes empresas e milita pela igualdade de gêneros o tempo todo. '
+				'descricao': 'Lucia Freitas é jornalista, blogueira, fundou o <a href="http://luluzinhacamp.com" target="_blank">LuluzinhaCamp</a>, primeiro grupo de mulheres da internet brasileira. Trabalha com produção de conteúdo para grandes empresas e milita pela igualdade de gêneros o tempo todo. '
 			},
 			{
 				'nome': 'Luis Leão',
@@ -483,9 +491,14 @@ angular.module('ssi', ['ngSanitize'])
 				'descricao': 'Rosario Villalta é diretora de Sistemas de Informação, Engenharia de Software e Ciência da Computação na Universidade Peruana de Ciências Aplicadas (UPC). Possui mestrado em Ensino de Educação Superior pela Universidade Andres Bello do Chile, doutorado em Administração de Empresas pela Universidade Politécnica da Catalunya e MBA com especialização em Sistemas e Tecnologia da Informação pela ESAN.'
 			},
 			{
-				'nome': 'Tania Simões',
-				'foto': 'tania-simoes',
-				'descricao': 'Tania "Pat" Simões é bacharel e licenciada em física pela Unesp, mestreem física aplicada pela USP e doutora em física pela Unicamp. Recentemente iniciou pesquisa em teoria dos jogos evolucionários e na empreitada pelo aumento do número de mulheres na comunidade Python, cofundou o PyLadies São Paulo',
+				'nome': 'Sérgio Lopes',
+				'foto': 'sergio-lopes',
+				'descricao': 'Sérgio Lopes é instrutor e desenvolvedor na <a href="https://www.caelum.com.br" target="_blank">Caelum</a> e no <a href="https://www.alura.com.br" target="_blank">Alura</a>. Especialista em front-end, especialmente nas áreas de mobile e performance. Publicou o livro <a href="http://sergiolopes.org/livro-web-mobile/" target="_blank">"A Web Mobile"</a> pela editora Casa do Código e é palestrante frequente em diversos eventos. Além disso, escreve sobre front e mobile em seu <a href="http://sergiolopes.org" target="_blank">blog</a> e  <a href="https://twitter.com/sergio_caelum" target="_blank">twitter</a>.'
+			},
+			{
+				'nome': 'Suelen Carvalho',
+				'foto': 'suelen-carvalho',
+				'descricao': 'Suelen Carvalho é pós-graduada pelo ITA e mestranda em Ciência da Computação pela USP. Trabalha com desenvolvimento de software há mais de 12 anos. Palestrante em diversos eventos de tecnologia sobre desenvolvimento java, android e agilidade. Atualmente começou a empreender e entrou como co-founder em uma startup mobile-first, é instrutora na Caelum, professora de MBA na FIAP e eventualmente escreve em seu blog <a href="http://www.suelengc.com" target="_blank">suelengc.com</a>'
 			},
 			{
 				'nome': 'Thiago Araújo',
