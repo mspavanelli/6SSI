@@ -79,6 +79,7 @@ angular.module('ssi', ['ngSanitize'])
 			{
 				'horario': '9h30',
 				'titulo': 'Oportunidades EACH',
+				'palestrante': 'Grupos de pesquisa',
 				'local': $scope.local[1]
 			},
 			{
@@ -111,9 +112,9 @@ angular.module('ssi', ['ngSanitize'])
 				'local': $scope.local[1]
 			},
 			{
-				'horario': '15h30'.
+				'horario': '15h30',
 				'titulo': 'UX de costa a costa',
-				'palestrante': 'Alda Rocha'
+				'palestrante': 'Alda Rocha',
 				'local': $scope.local[1]
 			},
 			{
@@ -127,10 +128,6 @@ angular.module('ssi', ['ngSanitize'])
 				'titulo': 'Mulheres nos games: um panorama geral sobre as mulheres dentro e fora dos jogos digitais',
 				'palestrante': 'Ariane Parra',
 				'local': $scope.local[1]
-			},
-			{
-				'horario': '18h',
-				'titulo': 'A definir'
 			},
 			{
 				'horario': '19h',
@@ -162,6 +159,7 @@ angular.module('ssi', ['ngSanitize'])
 			{
 				'horario': '9h30',
 				'titulo': 'Oportunidades EACH',
+				'palestrante': 'DASI, PET-SI e SI USP Jr',
 				'local': $scope.local[1]
 			},
 			{
@@ -252,6 +250,7 @@ angular.module('ssi', ['ngSanitize'])
 			{
 				'horario': '9h30',
 				'titulo': 'Oportunidades EACH',
+				'palestrante': 'WebDev, GameDev, EACH Social, Cursinho da EACH e HUBEE, WebDev, GameDev, EACH Social, Cursinho da EACH e Hubee',
 				'local': $scope.local[1]
 			},
 			{
@@ -353,6 +352,11 @@ angular.module('ssi', ['ngSanitize'])
 				'descricao': 'Adriana Silva é graduada em Estatística e Mestre em Ciências: Estatística e Experimentação Agronômica. Professora nos cursos: “Análise de Dados e Data Mining” e “Análise de Big Data” da FIA, onde ministra aulas de Regressão Linear, Logística e Árvore de Decisão, Social Network Analysis, além de aulas aplicadas em R, SPSS e SAS. Adriana é certificada em SAS Base Programming, SAS Predictive Modeler Using SAS Enterprise Miner, e tem experiência em projetos analíticos na área de modelagem, Regular Price Optimization e Social Network Analysis'
 			},
 			{
+				'nome': 'Alda Rocha',
+				'foto': 'alda-rocha',
+				'descricao': 'Alda Rocha é consultora e instrutora de Usabilidade, UX/UI designer, Web desenvolvedora, front-end, formada em arquitetura da informação com mais de 16 anos de experiência. Além de desenvolvedora, é engajada nas causas femininas e tecnológicas. Foi coordenadora de plataformas e soluções de TI na IOT Lab, web Designer e Designer gráfico. Desenvolveu projetos para muitas marcas consolidadas no Brasil e no mundo, agência digitais, startups e grandes empresas.'
+			},
+			{
 				'nome': 'Ariane Parra',
 				'foto': 'ariane-parra',
 				'descricao': 'Ariane Parra é CEO & Fundadora do Women Up Games, apaixonada por games, influenciadora digital, empreendedora, designer de games e encantada por esse mundo. Formanda em Engenharia de Produção pela PUC-SP. Certificou-se em Gestão e Liderança pela Universidade de Pittsburgh - EUA (Management and Leadership Program) em 2009, parceria com a Universidade Presbiteriana Mackenzie. Atua como mentora de empreendedoras em eventos influentes de tecnologia, além de ser participante ativa em painéis e debates favorecendo o empoderamento de mulheres através da tecnologia, representando a classe feminina no setor de games.'
@@ -428,6 +432,11 @@ angular.module('ssi', ['ngSanitize'])
 				'descricao':'Fernando Rychlewski atua há mais de 16 anos como desenvolvedor curioso, um Nerd como ele mesmo diz e tem mais de 8 anos de experiência em Análise e Gerência de Projetos de Sistemas em arquiteturas Web/Cloud. Os 12 anos de experiência com design gráfico fizeram com que se tornasse CEO de uma gráfica, seu Hobbie. Hoje atua na elaboração de evoluções tecnológicas e arquiteturas em sistemas de grandes corporações no mercado, além disso é organizador e palestrante de eventos para a comunidade de desenvolvedores brasileiros (Google Developers São Paulo, NetCoders, iMasters, etc).'
 			},
 			{
+				'nome': 'João Gabriel',
+				'foto': 'joao-gabriel',
+				'descricao': 'João Gabriel é consultor Pré Vendas, com MBA em Arquitetura de Soluções pela FIAP. Profissional com mais de 8 anos de experiência na área de TI com foco em tecnologias Microsoft, ele é especializado em SharePoint com sólidos conhecimentos em ASP.NET, Office 365 e Azure. Além disso, possui experiência em arquitetura e liderança de projetos de desenvolvimento e infraestrutura.'
+			},
+			{
 				'nome': 'Gisele Craveiro',
 				'foto': 'gisele-craveiro',
 				'descricao':'Gisele S. Craveiro tem mestrado em Ciência da Computação pela Unicamp, doutorado em Engenharia Elétrica pela USP e é docente da EACH-USP desde 2005. Atua como coordenadora do grupo de pesquisa Colaboratório em Desenvolvimento e Participação (Colab-USP) e é pesquisadora de redes internacionais de pesquisa como a Iniciativa Latinoamericana por los Datos Abiertos e a Open Data Research Network.'
@@ -499,8 +508,8 @@ angular.module('ssi', ['ngSanitize'])
 			},
 			{
 				'nome': 'Suelen Carvalho',
-				'foto': 'suelen-carvalho',
-				'descricao': 'Suelen Carvalho é pós-graduada pelo ITA e mestranda em Ciência da Computação pela USP. Trabalha com desenvolvimento de software há mais de 12 anos. Palestrante em diversos eventos de tecnologia sobre desenvolvimento java, android e agilidade. Atualmente começou a empreender e entrou como co-founder em uma startup mobile-first, é instrutora na Caelum, professora de MBA na FIAP e eventualmente escreve em seu blog <a href="http://www.suelengc.com" target="_blank">suelengc.com</a>'
+				'foto': 'suelen',
+				'descricao': 'Suelen Carvalho é pós-graduada pelo ITA e mestranda em Ciência da Computação pela USP. Trabalha com desenvolvimento de software há mais de 12 anos. Palestrante em diversos eventos de tecnologia sobre desenvolvimento Java, Android e agilidade. Atualmente começou a empreender e entrou como co-founder em uma startup mobile-first, é instrutora na Caelum, professora de MBA na FIAP e eventualmente escreve em seu blog <a href="http://www.suelengc.com" target="_blank">suelengc.com</a>'
 			},
 			{
 				'nome': 'Thiago Araújo',
