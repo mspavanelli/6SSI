@@ -111,6 +111,12 @@ angular.module('ssi', ['ngSanitize'])
 				'local': $scope.local[1]
 			},
 			{
+				'horario': '15h30'.
+				'titulo': 'UX de costa a costa',
+				'palestrante': 'Alda Rocha'
+				'local': $scope.local[1]
+			},
+			{
 				'horario': '16h30',
 				'titulo': 'Coffee Break',
 				'local': $scope.local[2],
@@ -128,7 +134,9 @@ angular.module('ssi', ['ngSanitize'])
 			},
 			{
 				'horario': '19h',
-				'titulo': 'A definir'
+				'titulo': 'Desenvolvimento de Aplicações Web com ASP Net MVC',
+				'palestrante': 'João Gabriel Stevanatto',
+				'local': $scope.local[1]
 			},
 			{
 				'horario': '20h',
@@ -145,12 +153,6 @@ angular.module('ssi', ['ngSanitize'])
 		];
 		$scope.palestras17 =
 		[
-			{
-				'horario': '8h - 12h30',
-				'titulo': 'Workshop PPgSI',
-				'palestrante': '<a href="http://goo.gl/btO4lQ" target="_blank">PPgSI</a>',
-				'local': $scope.local[3]
-			},
 			{
 				'horario': '9h',
 				'titulo': 'Coffe Break',
