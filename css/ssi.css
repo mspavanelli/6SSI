@@ -17,9 +17,8 @@ section h2, section h3 {
 	background-color: #391954;
 }
 
-ul.navbar-nav li:hover, ul.navbar-right li:active, ul.navbar-right li:focus, ul.navbar-right li:visited {
-	background-color: #1d092d;
-	border: 1px solid pink;
+ul.navbar-nav li:hover, ul.navbar-right button:active, ul.navbar-right button:focus, ul.navbar-right button:visited {
+	background-color: #332142;
 }
 
 .navbar-right button {
@@ -153,7 +152,7 @@ ul.navbar-right li:hover {
 }
 
 .hackathon img {
-	width: 300px;
+	width: 440px;
 	max-width: 90vw;
 	margin: auto;
 }
@@ -219,8 +218,28 @@ ul.navbar-right li:hover {
 	color: #511d7d;
 }
 
+.form-inscricao {
+	overflow: hidden;
+	margin: 15px auto;
+}
+ 
 .inscricao iframe {
-	border: 1px solid pink;
-	position: absolute;
-    clip: rect(0px,60px,200px,0px);
+	height: 500px;
+	margin-top: -67px;
+	width: 650px;
+}
+
+.hackathon {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-bottom: 30px;
+	background-color: rgb(64,80,102);
+}
+
+.hackathon p {
+	color: white;
+}
+
+.hackathon a {
+	color: orange;
 }
